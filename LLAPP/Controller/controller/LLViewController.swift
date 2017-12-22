@@ -1,14 +1,14 @@
 //
-//  LLFilesViewController.swift
+//  LLViewController.swift
 //  LLAPP
-//
-//  Created by lv on 2017/12/21.
-//  Copyright © 2017年 lv. All rights reserved.
+//  viewController父类
+//  Created by Ying on 2017/12/22.
+//  Copyright © 2017年 Ying. All rights reserved.
 //
 
 import UIKit
 
-class LLFilesViewController: LLViewController {
+class LLViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LLLoginViewController: UIViewController {
+class LLLoginViewController: LLViewController {
     @IBOutlet weak var underView: UIView!
     @IBOutlet weak var switchBtn: UISegmentedControl!
     @IBOutlet weak var loginBtn: UIButton!
@@ -26,25 +26,35 @@ class LLLoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        //重构视图
         resetView()
+        
+        //注册键盘呼出通知
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillShow(note:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
         
+        //注册键盘消失通知
         NotificationCenter.default.addObserver(self, selector: #selector(self.keyboardWillHidden(note:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
     }
     
+    
+    //键盘出现上移view
     @objc func keyboardWillShow(note: NSNotification) {
         underView.center = CGPoint.init(x: underView.center.x, y: 200)
         
     }
+    //键盘消失恢复view
     @objc func keyboardWillHidden(note: NSNotification) {
         underView.center = CGPoint.init(x: underView.center.x, y: 521)
 
     }
     
+    //点击其他地方砍掉键盘
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         userLabel.resignFirstResponder()
         passworldLabel.resignFirstResponder()
     }
+    
     func resetView(){
         titleLabel.layer.cornerRadius = 10.0
         titleLabel.layer.masksToBounds = true
@@ -55,7 +65,6 @@ class LLLoginViewController: UIViewController {
         loginBtn.titleLabel?.text = "登录"
     }
     
-
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

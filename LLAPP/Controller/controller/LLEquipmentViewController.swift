@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LLEquipmentViewController: UIViewController {
+class LLEquipmentViewController: LLViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

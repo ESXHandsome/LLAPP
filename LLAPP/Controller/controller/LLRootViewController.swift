@@ -12,7 +12,6 @@ class LLRootViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         print("[LL] 当前的控制器是RootViewController")
         
         //初始化控制器
@@ -36,7 +35,6 @@ class LLRootViewController: UITabBarController {
         userViewController.view.backgroundColor = UIColor.gray
         ideaViewController.view.backgroundColor = UIColor.gray
         
-        
         //初始化导航栏控制器
         let measureNVC = UINavigationController.init(rootViewController: measureViewController)
         let filesNVC = UINavigationController.init(rootViewController: filesViewController)
@@ -51,11 +49,19 @@ class LLRootViewController: UITabBarController {
         userNVC.tabBarItem.title = "用户管理"
         ideaNVC.tabBarItem.title = "意见反馈"
         
-        
-        
         //给标签加上图标
-//        measureNVC.tabBarItem.image = UIImage.init(named: "")
+        measureNVC.tabBarItem.image = UIImage.init(named: "")
+        filesNVC.tabBarItem.image = UIImage.init(named: "")
+        customerNVC.tabBarItem.image = UIImage.init(named: "")
+        userNVC.tabBarItem.image = UIImage.init(named: "")
+        ideaNVC.tabBarItem.image = UIImage.init(named: "")
         
+        //选中图标
+        measureNVC.tabBarItem.selectedImage = UIImage.init(named: "")
+        filesNVC.tabBarItem.selectedImage = UIImage.init(named: "")
+        customerNVC.tabBarItem.selectedImage = UIImage.init(named: "")
+        userNVC.tabBarItem.selectedImage = UIImage.init(named: "")
+        ideaNVC.tabBarItem.selectedImage = UIImage.init(named: "")
         
         //添加到标签栏控制器
         self.addChildViewController(measureNVC)
@@ -64,7 +70,6 @@ class LLRootViewController: UITabBarController {
         self.addChildViewController(userNVC)
         self.addChildViewController(ideaNVC)
         
-        self.view.backgroundColor = UIColor.red
         // Do any additional setup after loading the view.
     }
 

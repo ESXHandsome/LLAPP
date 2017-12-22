@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LLCustomerServiceViewController: UIViewController {
+class LLCustomerServiceViewController: LLViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

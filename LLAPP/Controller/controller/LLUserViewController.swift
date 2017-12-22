@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LLUserViewController: UIViewController {
+class LLUserViewController: LLViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
