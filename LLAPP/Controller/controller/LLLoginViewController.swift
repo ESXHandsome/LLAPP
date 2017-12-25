@@ -18,18 +18,20 @@ class LLLoginViewController: LLViewController {
         let network = LLNetWorking()
         let user = userName.text
         let pwd = password.text
-        if user == ""&&pwd == ""{
-
+        if user == ""||pwd == ""{
+            let alert = UIAlertController(title: "提示", message: "用户名或密码为空", preferredStyle:.alert)
+            alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }else{
             let isogin = network.login(user: user!,pwd: pwd!)
             if isogin {
-            
+                self.present(LLRootViewController(), animated: true, completion: nil)
             }else{
-
+                let alert = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle:.alert)
+                alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
+                self.present(alert, animated: true, completion: nil)
             }
         }
-        
-        
     }
     @IBAction func switchBtn(_ sender: UISegmentedControl) {
     }

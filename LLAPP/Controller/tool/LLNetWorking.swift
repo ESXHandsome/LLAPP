@@ -11,6 +11,7 @@ import AFNetworking
 class LLNetWorking: NSObject {
     
     func login(user:String,pwd:String) -> Bool {
+        var response = String()
         let urlString = "http://127.0.0.1:8888/login";
         let manager = AFHTTPSessionManager()
         let set = Set<String>(arrayLiteral: "text/html","text/plain","text/json","application/json", "text/javascript")
@@ -20,14 +21,18 @@ class LLNetWorking: NSObject {
         manager.post(urlString, parameters:dic, progress:nil, success: { (task, json) in
             print(json!)
             if let dict = json as? Dictionary<String,Any>{
-                print(dict)
+                response = dict["status"] as! String
             }else{
                 print("json解析失败","请求接口:",urlString,"数据:",json as Any)
             }
         }) { (task, error) in
-            
         }
-        return true
+        print(response+"sdfsdf")
+        if response == "unlogin"{
+            return false
+        }else{
+            return true
+        }
     }
     
     // MARK: 字典转字符串
