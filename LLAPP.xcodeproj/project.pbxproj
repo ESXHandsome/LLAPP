@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A26F20E1FF0AAE7006135BD /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A26F20F1FF0AAE7006135BD /* MBProgressHUD.framework */; };
 		0A82730D1FECC29F00C70AE1 /* LLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82730B1FECC29F00C70AE1 /* LLViewController.swift */; };
 		0A82730E1FECC29F00C70AE1 /* LLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82730C1FECC29F00C70AE1 /* LLViewController.xib */; };
+		0A82734E1FECC60C00C70AE1 /* LLNetWorking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82734D1FECC60C00C70AE1 /* LLNetWorking.swift */; };
+		0ABE70041FED0AE800F929C0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABE70051FED0AE800F929C0 /* AFNetworking.framework */; };
+		0ABE70061FED0B0400F929C0 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABE70071FED0B0400F929C0 /* SDWebImage.framework */; };
 		0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */; };
 		0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */; };
 		0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */; };
@@ -32,11 +36,16 @@
 		0AFB48F51FECA8D600B48012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F41FECA8D600B48012 /* Assets.xcassets */; };
 		0AFB48F91FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F71FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png */; };
 		0AFB48FA1FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F81FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg */; };
+		B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A26F20F1FF0AAE7006135BD /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A82730B1FECC29F00C70AE1 /* LLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLViewController.swift; sourceTree = "<group>"; };
 		0A82730C1FECC29F00C70AE1 /* LLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLViewController.xib; sourceTree = "<group>"; };
+		0A82734D1FECC60C00C70AE1 /* LLNetWorking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLNetWorking.swift; sourceTree = "<group>"; };
+		0ABE70051FED0AE800F929C0 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ABE70071FED0B0400F929C0 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFB48B61FEBE3DE00B48012 /* LLAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +71,9 @@
 		0AFB48F41FECA8D600B48012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0AFB48F71FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E0F219DC4850BEDEF282DAFBBD6BA0EC.png; sourceTree = "<group>"; };
 		0AFB48F81FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = D77B2E7932BC08CFEA45D685B0049FAB.jpg; sourceTree = "<group>"; };
+		50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.release.xcconfig"; sourceTree = "<group>"; };
+		A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,17 +81,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A26F20E1FF0AAE7006135BD /* MBProgressHUD.framework in Frameworks */,
+				0ABE70061FED0B0400F929C0 /* SDWebImage.framework in Frameworks */,
+				0ABE70041FED0AE800F929C0 /* AFNetworking.framework in Frameworks */,
+				B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A82734C1FECC5DA00C70AE1 /* tool */ = {
+			isa = PBXGroup;
+			children = (
+				0A82734D1FECC60C00C70AE1 /* LLNetWorking.swift */,
+			);
+			path = tool;
+			sourceTree = "<group>";
+		};
 		0AFB48AD1FEBE3DE00B48012 = {
 			isa = PBXGroup;
 			children = (
 				0AFB48B81FEBE3DE00B48012 /* LLAPP */,
 				0AFB48B71FEBE3DE00B48012 /* Products */,
+				209623AF157E5DD51DA9C2BC /* Pods */,
+				CC0DB1430282CB37F9B27146 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -111,6 +137,7 @@
 		0AFB48CB1FEBE44700B48012 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A82734C1FECC5DA00C70AE1 /* tool */,
 				0AFB48D21FEBE51C00B48012 /* controller */,
 				0AFB48D41FEBE51C00B48012 /* xib */,
 			);
@@ -172,6 +199,26 @@
 			name = Source;
 			sourceTree = "<group>";
 		};
+		209623AF157E5DD51DA9C2BC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */,
+				9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CC0DB1430282CB37F9B27146 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A26F20F1FF0AAE7006135BD /* MBProgressHUD.framework */,
+				0ABE70071FED0B0400F929C0 /* SDWebImage.framework */,
+				0ABE70051FED0AE800F929C0 /* AFNetworking.framework */,
+				50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -179,9 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0AFB48C81FEBE3DF00B48012 /* Build configuration list for PBXNativeTarget "LLAPP" */;
 			buildPhases = (
+				BFC05E4D96CCE8371447BEF0 /* [CP] Check Pods Manifest.lock */,
 				0AFB48B21FEBE3DE00B48012 /* Sources */,
 				0AFB48B31FEBE3DE00B48012 /* Frameworks */,
 				0AFB48B41FEBE3DE00B48012 /* Resources */,
+				39C0EB94121FF664C6910B40 /* [CP] Embed Pods Frameworks */,
+				16D1CD54A6A9F3C6EBC8C8BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +300,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		16D1CD54A6A9F3C6EBC8C8BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		39C0EB94121FF664C6910B40 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC05E4D96CCE8371447BEF0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LLAPP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0AFB48B21FEBE3DE00B48012 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,6 +372,7 @@
 				0AFB48DE1FEBE57400B48012 /* LLEquipmentViewController.swift in Sources */,
 				0AFB48F21FECA7BC00B48012 /* LLLoginViewController.swift in Sources */,
 				0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */,
+				0A82734E1FECC60C00C70AE1 /* LLNetWorking.swift in Sources */,
 				0AFB48E61FEBE5E100B48012 /* LLUserViewController.swift in Sources */,
 				0AFB48EA1FEBE60400B48012 /* LLIdeaViewController.swift in Sources */,
 			);
@@ -400,6 +509,7 @@
 		};
 		0AFB48C91FEBE3DF00B48012 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";
@@ -416,6 +526,7 @@
 		};
 		0AFB48CA1FEBE3DF00B48012 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-2";

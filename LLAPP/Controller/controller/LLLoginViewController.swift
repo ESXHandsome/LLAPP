@@ -9,10 +9,27 @@
 import UIKit
 
 class LLLoginViewController: LLViewController {
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var underView: UIView!
     @IBOutlet weak var switchBtn: UISegmentedControl!
     @IBOutlet weak var loginBtn: UIButton!
     @IBAction func loginBtn(_ sender: UIButton) {
+        let network = LLNetWorking()
+        let user = userName.text
+        let pwd = password.text
+        if user == ""&&pwd == ""{
+
+        }else{
+            let isogin = network.login(user: user!,pwd: pwd!)
+            if isogin {
+            
+            }else{
+
+            }
+        }
+        
+        
     }
     @IBAction func switchBtn(_ sender: UISegmentedControl) {
     }

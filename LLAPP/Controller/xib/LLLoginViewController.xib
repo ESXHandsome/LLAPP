@@ -13,11 +13,13 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLLoginViewController" customModule="LLAPP" customModuleProvider="target">
             <connections>
                 <outlet property="loginBtn" destination="gpD-dt-5kq" id="auT-TG-Bd3"/>
+                <outlet property="password" destination="XJH-hS-5JL" id="Bce-Dq-eLp"/>
                 <outlet property="passworldLabel" destination="XJH-hS-5JL" id="ezQ-QU-Pv5"/>
                 <outlet property="switchBtn" destination="QYM-7D-kOp" id="DjF-Ev-jTS"/>
                 <outlet property="titleLabel" destination="Pv8-Lw-y7U" id="pkO-uF-edw"/>
                 <outlet property="underView" destination="qSN-u7-lyk" id="Ggr-77-Lut"/>
                 <outlet property="userLabel" destination="Okn-qy-WoC" id="OYV-bV-MAI"/>
+                <outlet property="userName" destination="Okn-qy-WoC" id="aJ1-46-Nsa"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
