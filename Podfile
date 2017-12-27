@@ -4,4 +4,5 @@ use_frameworks!
 pod 'AFNetworking'
 pod 'SDWebImage'
 pod 'MBProgressHUD'
+pod 'YYKit'
 end

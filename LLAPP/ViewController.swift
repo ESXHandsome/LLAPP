@@ -14,6 +14,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor.gray
         // Do any additional setup after loading the view, typically from a nib.
+        
         let queue = DispatchQueue(label: "")
         queue.async {
             Thread.sleep(forTimeInterval: 3)

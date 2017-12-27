@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AFNetworking
 class LLLoginViewController: LLViewController {
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
@@ -15,7 +15,6 @@ class LLLoginViewController: LLViewController {
     @IBOutlet weak var switchBtn: UISegmentedControl!
     @IBOutlet weak var loginBtn: UIButton!
     @IBAction func loginBtn(_ sender: UIButton) {
-        let network = LLNetWorking()
         let user = userName.text
         let pwd = password.text
         if user == ""||pwd == ""{
@@ -23,14 +22,7 @@ class LLLoginViewController: LLViewController {
             alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
             self.present(alert, animated: true, completion: nil)
         }else{
-            let isogin = network.login(user: user!,pwd: pwd!)
-            if isogin {
-                self.present(LLRootViewController(), animated: true, completion: nil)
-            }else{
-                let alert = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle:.alert)
-                alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
-                self.present(alert, animated: true, completion: nil)
-            }
+            self.login(user: user!,pwd: pwd!)
         }
     }
     @IBAction func switchBtn(_ sender: UISegmentedControl) {
@@ -82,6 +74,40 @@ class LLLoginViewController: LLViewController {
         loginBtn.layer.cornerRadius = 10.0
         loginBtn.layer.masksToBounds = true
         loginBtn.titleLabel?.text = "登录"
+    }
+    
+    func login(user:String,pwd:String) -> Void {
+        let urlString = "http://127.0.0.1:8888/login";
+        let manager = AFHTTPSessionManager()
+        let set = Set<String>(arrayLiteral: "text/html","text/plain","text/json","application/json", "text/javascript")
+        manager.responseSerializer.acceptableContentTypes = set
+        manager.requestSerializer.timeoutInterval = 30
+        let dic = ["name":user,"pwd":pwd]
+        manager.post(urlString, parameters:dic, progress:nil, success: { (task, json) in
+            print(json!)
+            if let dict = json as? Dictionary<String,Any>{
+                let result:String = dict["status"] as! String
+                print(result)
+                if result == "login"{
+                    self.present(LLRootViewController(), animated: true, completion: nil)
+                }else{
+                    let alert = UIAlertController(title: "提示", message: "用户名或密码为空", preferredStyle:.alert)
+                    alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
+                }
+            }else{
+                print("json解析失败","请求接口:",urlString,"数据:",json as Any)
+            }
+        }) { (task, error) in
+        }
+        
+    }
+    
+    // MARK: 字典转字符串
+    func dicValueString(_ dic:[String : Any]) -> String?{
+        let data = try? JSONSerialization.data(withJSONObject: dic, options: [])
+        let str = String(data: data!, encoding: String.Encoding.utf8)
+        return str
     }
     
     override func didReceiveMemoryWarning() {
