@@ -1,18 +1,18 @@
 //
-//  LLViewController.swift
+//  LLEnergyViewController.swift
 //  LLAPP
-//  viewController父类
-//  Created by Ying on 2017/12/22.
+//
+//  Created by Ying on 2017/12/27.
 //  Copyright © 2017年 Ying. All rights reserved.
 //
 
 import UIKit
-import MBProgressHUD
-import AFNetworking
-class LLViewController: UIViewController {
+
+class LLEnergyViewController: LLViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+
         // Do any additional setup after loading the view.
     }
 
