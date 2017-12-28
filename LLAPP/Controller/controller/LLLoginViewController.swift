@@ -10,7 +10,7 @@ import UIKit
 import AFNetworking
 class LLLoginViewController: LLViewController {
     @IBAction func resetPwdAction(_ sender: Any) {
-        self.navigationController?.pushViewController(LLRegisterViewController(), animated: true)
+        self.navigationController?.pushViewController(LLResetViewController(), animated: true)
     }
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
@@ -32,6 +32,7 @@ class LLLoginViewController: LLViewController {
         self.navigationController?.pushViewController(LLRegisterViewController(), animated: true)
     }
     @IBAction func switchBtn(_ sender: UISegmentedControl) {
+        
     }
     @IBOutlet weak var passworldLabel: UITextField!
     @IBOutlet weak var userLabel: UITextField!

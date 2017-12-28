@@ -12,6 +12,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLResetViewController" customModule="LLAPP" customModuleProvider="target">
             <connections>
+                <outlet property="newPasswordField" destination="Xaw-3X-PDm" id="041-mf-b2R"/>
+                <outlet property="passwordField" destination="V7g-vr-pLg" id="4fI-hd-2qB"/>
+                <outlet property="userField" destination="gsH-OW-X2M" id="reN-2Z-38C"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -73,6 +76,9 @@
                             <state key="normal" title="完成">
                                 <color key="titleColor" red="0.96990937249999998" green="0.99372071790000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </state>
+                            <connections>
+                                <action selector="finishButton:" destination="-1" eventType="touchUpInside" id="Zco-7d-8uv"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="新密码" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmy-hi-p4v">
                             <rect key="frame" x="-7" y="110" width="52" height="21"/>

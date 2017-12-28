@@ -7,20 +7,25 @@
 //
 
 import UIKit
+import AFNetworking
 //import LLRootViewController
-class ViewController: UIViewController {
-
+class ViewController: LLViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.backgroundColor = UIColor.gray
+        let image = UIImageView.init(frame: UIScreen.main.bounds)
         // Do any additional setup after loading the view, typically from a nib.
+        image.setImageWith(URL.init(string: "https://www.baidu.com/img/bd_logo1.png")!)
+        self.view.addSubview(image)
         
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
         let queue = DispatchQueue(label: "")
         queue.async {
             Thread.sleep(forTimeInterval: 3)
             self.pushViewController()
         }
-        
     }
     
     func pushViewController(){
