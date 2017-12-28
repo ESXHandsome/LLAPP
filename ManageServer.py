@@ -26,15 +26,30 @@ def login():
     else:
         return json.dumps({'status':'unlogin'})
 
+#register
+@app.route('/register',methods=['POST'])
+def register():
+    user = request.form.get('name')
+    pwd = request.form.get('pwd')
+    dic = db.login.find_one({"user":user})
+    if dic == None:
+        db.login.insert({"user":user,"password":pwd})
+        return json.dumps({'status':'register'})
+    else:
+        return json.dumps({'status':'unregister'})
 
-@app.route('/')
-def hello_name():
-    return 'this is name\n'
-
-
-@app.route('/show')
-def show():
-    return 'this is show \n'
+#reset password
+@app.route('/reset_pwd')
+def reset_pwd():
+    user = request.form.get('name')
+    pwd = request.form.get('pwd')
+    new_pwd = request.form.get('new_pwd')
+    dic = db.login.find_one({"user":user})
+    if dic == None:
+        return json.dumps({'status':'no_user'})
+    else:
+        db.login.update({"password":pwd},{"$set":{"password":new_pwd}})
+        return json.dumps({'status':'OK'})
 
 
 

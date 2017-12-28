@@ -15,13 +15,13 @@ class LLMeasureViewController: LLViewController {
     @IBOutlet weak var woterButton: UIButton!
 
     @IBAction func waterButtonAction(_ sender: UIButton) {
-        self.present(LLWaterViewController(), animated: true, completion: nil)
+        self.navigationController?.pushViewController(LLWaterViewController(), animated: true)
     }
     @IBAction func energyButtonAction(_ sender: UIButton) {
-        self.present(LLEnergyViewController(), animated: true, completion: nil)
+        self.navigationController?.pushViewController(LLEnergyViewController(), animated: true)
     }
     @IBAction func gasButtonAction(_ sender: UIButton) {
-        self.present(LLGasViewController(), animated: true, completion: nil)
+        self.navigationController?.pushViewController(LLGasViewController(), animated: true)
     }
     override func viewDidLoad() {
         super.viewDidLoad()

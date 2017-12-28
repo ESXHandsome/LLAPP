@@ -19,6 +19,10 @@
 		0AE02F481FF3B662002B9A1E /* LLEnergyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F461FF3B662002B9A1E /* LLEnergyViewController.xib */; };
 		0AE02F4B1FF3B670002B9A1E /* LLGasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE02F491FF3B670002B9A1E /* LLGasViewController.swift */; };
 		0AE02F4C1FF3B670002B9A1E /* LLGasViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F4A1FF3B670002B9A1E /* LLGasViewController.xib */; };
+		0AE02F501FF4838B002B9A1E /* LLRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE02F4E1FF4838B002B9A1E /* LLRegisterViewController.swift */; };
+		0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */; };
+		0AE02F561FF49AD8002B9A1E /* LLResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */; };
+		0AE02F571FF49AD8002B9A1E /* LLResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */; };
 		0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */; };
 		0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */; };
 		0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */; };
@@ -58,6 +62,10 @@
 		0AE02F461FF3B662002B9A1E /* LLEnergyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLEnergyViewController.xib; sourceTree = "<group>"; };
 		0AE02F491FF3B670002B9A1E /* LLGasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLGasViewController.swift; sourceTree = "<group>"; };
 		0AE02F4A1FF3B670002B9A1E /* LLGasViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLGasViewController.xib; sourceTree = "<group>"; };
+		0AE02F4E1FF4838B002B9A1E /* LLRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLRegisterViewController.swift; sourceTree = "<group>"; };
+		0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLRegisterViewController.xib; sourceTree = "<group>"; };
+		0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLResetViewController.swift; sourceTree = "<group>"; };
+		0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLResetViewController.xib; sourceTree = "<group>"; };
 		0AFB48B61FEBE3DE00B48012 /* LLAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -186,6 +194,8 @@
 				0AFB48E81FEBE60400B48012 /* LLIdeaViewController.swift */,
 				0AFB48EC1FEC98C800B48012 /* LLRootViewController.swift */,
 				0AFB48F01FECA7BC00B48012 /* LLLoginViewController.swift */,
+				0AE02F4E1FF4838B002B9A1E /* LLRegisterViewController.swift */,
+				0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */,
 				0A82730B1FECC29F00C70AE1 /* LLViewController.swift */,
 				0AE02F4D1FF3B732002B9A1E /* 水电计量 */,
 			);
@@ -195,6 +205,8 @@
 		0AFB48D41FEBE51C00B48012 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */,
+				0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */,
 				0A82730C1FECC29F00C70AE1 /* LLViewController.xib */,
 				0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */,
 				0AFB48D91FEBE55000B48012 /* LLFilesViewController.xib */,
@@ -311,10 +323,12 @@
 				0A82730E1FECC29F00C70AE1 /* LLViewController.xib in Resources */,
 				0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */,
 				0AFB48DB1FEBE55000B48012 /* LLFilesViewController.xib in Resources */,
+				0AE02F571FF49AD8002B9A1E /* LLResetViewController.xib in Resources */,
 				0AFB48E31FEBE5AB00B48012 /* LLCustomerServiceViewController.xib in Resources */,
 				0AFB48F91FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png in Resources */,
 				0AE02F481FF3B662002B9A1E /* LLEnergyViewController.xib in Resources */,
 				0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */,
+				0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */,
 				0AFB48EF1FEC98C800B48012 /* LLRootViewController.xib in Resources */,
 				0AFB48E71FEBE5E100B48012 /* LLUserViewController.xib in Resources */,
 			);
@@ -387,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AE02F561FF49AD8002B9A1E /* LLResetViewController.swift in Sources */,
 				0AFB48E21FEBE5AB00B48012 /* LLCustomerServiceViewController.swift in Sources */,
 				0AE02F471FF3B662002B9A1E /* LLEnergyViewController.swift in Sources */,
 				0AE02F4B1FF3B670002B9A1E /* LLGasViewController.swift in Sources */,
@@ -401,6 +416,7 @@
 				0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */,
 				0AFB48E61FEBE5E100B48012 /* LLUserViewController.swift in Sources */,
 				0AFB48EA1FEBE60400B48012 /* LLIdeaViewController.swift in Sources */,
+				0AE02F501FF4838B002B9A1E /* LLRegisterViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

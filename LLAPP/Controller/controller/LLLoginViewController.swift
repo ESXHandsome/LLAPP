@@ -9,6 +9,9 @@
 import UIKit
 import AFNetworking
 class LLLoginViewController: LLViewController {
+    @IBAction func resetPwdAction(_ sender: Any) {
+        self.navigationController?.pushViewController(LLRegisterViewController(), animated: true)
+    }
     @IBOutlet weak var password: UITextField!
     @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var underView: UIView!
@@ -24,6 +27,9 @@ class LLLoginViewController: LLViewController {
         }else{
             self.login(user: user!,pwd: pwd!)
         }
+    }
+    @IBAction func registerButtonAction(_ sender: UIButton) {
+        self.navigationController?.pushViewController(LLRegisterViewController(), animated: true)
     }
     @IBAction func switchBtn(_ sender: UISegmentedControl) {
     }
@@ -66,6 +72,7 @@ class LLLoginViewController: LLViewController {
         passworldLabel.resignFirstResponder()
     }
     
+    //设置视图圆角
     func resetView(){
         titleLabel.layer.cornerRadius = 10.0
         titleLabel.layer.masksToBounds = true
@@ -76,6 +83,7 @@ class LLLoginViewController: LLViewController {
         loginBtn.titleLabel?.text = "登录"
     }
     
+    //登录逻辑
     func login(user:String,pwd:String) -> Void {
         let urlString = "http://127.0.0.1:8888/login";
         let manager = AFHTTPSessionManager()
@@ -91,7 +99,7 @@ class LLLoginViewController: LLViewController {
                 if result == "login"{
                     self.present(LLRootViewController(), animated: true, completion: nil)
                 }else{
-                    let alert = UIAlertController(title: "提示", message: "用户名或密码为空", preferredStyle:.alert)
+                    let alert = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle:.alert)
                     alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
                     self.present(alert, animated: true, completion: nil)
                 }

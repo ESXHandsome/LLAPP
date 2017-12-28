@@ -26,7 +26,8 @@ class ViewController: UIViewController {
     func pushViewController(){
         let loginViewController = LLLoginViewController()
         DispatchQueue.main.async{
-            self.present(loginViewController, animated: true, completion: nil)
+            let nvc = UINavigationController.init(rootViewController: loginViewController)
+            self.present(nvc, animated: true, completion: nil)
         }
     }
     

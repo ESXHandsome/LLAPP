@@ -23,35 +23,52 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIe-Eq-coF">
-                    <rect key="frame" x="16" y="100" width="378" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
-                    <state key="normal" title="水表计量"/>
-                    <connections>
-                        <action selector="waterButtonAction:" destination="-1" eventType="touchUpInside" id="ecI-7B-G5h"/>
-                    </connections>
-                </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-Z0-jlm">
-                    <rect key="frame" x="18" y="300" width="378" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksR-Z0-jlm">
+                    <rect key="frame" x="20" y="255" width="374" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="vXC-J7-Mjj"/>
+                    </constraints>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                     <state key="normal" title="电表计量"/>
                     <connections>
                         <action selector="energyButtonAction:" destination="-1" eventType="touchUpInside" id="clL-bL-O3O"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUD-Sf-rfR">
-                    <rect key="frame" x="20" y="500" width="378" height="150"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUD-Sf-rfR">
+                    <rect key="frame" x="20" y="455" width="374" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="4pz-m5-bBM"/>
+                    </constraints>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                     <state key="normal" title="天然气计量"/>
                     <connections>
                         <action selector="gasButtonAction:" destination="-1" eventType="touchUpInside" id="jEp-Kd-i3h"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LIe-Eq-coF">
+                    <rect key="frame" x="20" y="55" width="374" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="752-tW-2a1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                    <state key="normal" title="水表统计"/>
+                    <connections>
+                        <action selector="waterButtonAction:" destination="-1" eventType="touchUpInside" id="ecI-7B-G5h"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LIe-Eq-coF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="35" id="3Ng-pu-jrT"/>
+                <constraint firstItem="ksR-Z0-jlm" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="7hl-PD-zht"/>
+                <constraint firstItem="ksR-Z0-jlm" firstAttribute="top" secondItem="LIe-Eq-coF" secondAttribute="bottom" constant="50" id="AQv-vh-bmV"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ksR-Z0-jlm" secondAttribute="trailing" constant="20" id="FIB-af-pQ9"/>
+                <constraint firstItem="LIe-Eq-coF" firstAttribute="leading" secondItem="ksR-Z0-jlm" secondAttribute="leading" id="YWS-1y-r82"/>
+                <constraint firstItem="XUD-Sf-rfR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="hPG-l7-CUc"/>
+                <constraint firstItem="XUD-Sf-rfR" firstAttribute="top" secondItem="ksR-Z0-jlm" secondAttribute="bottom" constant="50" id="mjV-cc-irt"/>
+                <constraint firstItem="LIe-Eq-coF" firstAttribute="trailing" secondItem="ksR-Z0-jlm" secondAttribute="trailing" id="ofA-KV-AYU"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XUD-Sf-rfR" secondAttribute="trailing" constant="20" id="vLY-sV-2gT"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <point key="canvasLocation" x="-400" y="83"/>
         </view>
