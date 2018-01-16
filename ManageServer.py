@@ -51,8 +51,77 @@ def reset_pwd():
         db.login.update({"password":pwd},{"$set":{"password":new_pwd}})
         return json.dumps({'status':'OK'})
 
+@app.route('/measure/water')
+def measure_water():
+    return 'measure_water'
 
+@app.route('/measure/energy')
+def measure_energy():
+    return 'measure_energy'
 
+@app.route('/measure/gas')
+def measure_gas():
+    return 'measure_gas'
+
+@app.route('/file/proprietor')
+def file_proprietor():
+    return 'file_proprietor'
+
+@app.route('/file/property')
+def file_property():
+    return 'file_property'
+
+@app.route('/equipment/safeguard')
+def equipment_safeguard():
+    return 'equipment_safeguard'
+
+@app.route('/equipment/clean')
+def equipment_clean():
+    return 'equipment_clean'
+
+@app.route('/equipment/afforest')
+def equipment_afforest():
+    return 'equipment_afforest'
+
+@app.route('/equipment/energy')
+def equipment_energy():
+    return 'equipment_energy'
+
+@app.route('/customer_center/fix')
+def customer_center_fix():
+    return 'customer_center_fix'
+
+@app.route('/customer_center/phone')
+def customer_center_phone():
+    return 'customer_center_phone'
+
+@app.route('/customer_center/public_fix')
+def customer_center_public_fix():
+    return 'customer_center_public_fix'
+
+@app.route('/customer_center/renovate')
+def customer_center_renovate():
+    return 'customer_center_renovate'
+
+@app.route('/pay/energy')
+def pay_energy():
+    return 'pay_energy'
+
+@app.route('/pay/gas')
+def pay_gas():
+    return 'pay_gas'
+
+@app.route('/pay/manage')
+def pay_manage():
+    return 'pay_manage'
+
+@app.route('/suggest/custom')
+def suggest_custom():
+    return 'suggest_custom'
+
+@app.route('/suggest/user')
+def suggest_user():
+    return 'suggest_user'
 
 if __name__ == '__main__':
     app.debug = True
