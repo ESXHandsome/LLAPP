@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A26F20E1FF0AAE7006135BD /* MBProgressHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A26F20F1FF0AAE7006135BD /* MBProgressHUD.framework */; };
+		0A2778DF200EF6D7002823A7 /* LLPayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2778DD200EF6D7002823A7 /* LLPayViewController.swift */; };
+		0A2778E0200EF6D7002823A7 /* LLPayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2778DE200EF6D7002823A7 /* LLPayViewController.xib */; };
 		0A82730D1FECC29F00C70AE1 /* LLViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82730B1FECC29F00C70AE1 /* LLViewController.swift */; };
 		0A82730E1FECC29F00C70AE1 /* LLViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82730C1FECC29F00C70AE1 /* LLViewController.xib */; };
 		0ABE70041FED0AE800F929C0 /* AFNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABE70051FED0AE800F929C0 /* AFNetworking.framework */; };
@@ -51,6 +53,8 @@
 
 /* Begin PBXFileReference section */
 		0A26F20F1FF0AAE7006135BD /* MBProgressHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = MBProgressHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A2778DD200EF6D7002823A7 /* LLPayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLPayViewController.swift; sourceTree = "<group>"; };
+		0A2778DE200EF6D7002823A7 /* LLPayViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLPayViewController.xib; sourceTree = "<group>"; };
 		0A82730B1FECC29F00C70AE1 /* LLViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLViewController.swift; sourceTree = "<group>"; };
 		0A82730C1FECC29F00C70AE1 /* LLViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLViewController.xib; sourceTree = "<group>"; };
 		0ABE70051FED0AE800F929C0 /* AFNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = AFNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,17 +116,115 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AE02F4D1FF3B732002B9A1E /* 水电计量 */ = {
+		0A2778D1200EF3C3002823A7 /* 系统设置 */ = {
+			isa = PBXGroup;
+			children = (
+				0A2778D9200EF574002823A7 /* 修改密码 */,
+				0A2778D7200EF542002823A7 /* 用户注册 */,
+			);
+			path = "系统设置";
+			sourceTree = "<group>";
+		};
+		0A2778D2200EF4E0002823A7 /* 档案管理 */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48D81FEBE55000B48012 /* LLFilesViewController.swift */,
+				0AFB48D91FEBE55000B48012 /* LLFilesViewController.xib */,
+			);
+			path = "档案管理";
+			sourceTree = "<group>";
+		};
+		0A2778D3200EF4F1002823A7 /* 物业设备管理 */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48DC1FEBE57400B48012 /* LLEquipmentViewController.swift */,
+				0AFB48DD1FEBE57400B48012 /* LLEquipmentViewController.xib */,
+			);
+			path = "物业设备管理";
+			sourceTree = "<group>";
+		};
+		0A2778D4200EF4FF002823A7 /* 客服管理 */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48E01FEBE5AB00B48012 /* LLCustomerServiceViewController.swift */,
+				0AFB48E11FEBE5AB00B48012 /* LLCustomerServiceViewController.xib */,
+			);
+			path = "客服管理";
+			sourceTree = "<group>";
+		};
+		0A2778D5200EF507002823A7 /* 用户缴费 */ = {
+			isa = PBXGroup;
+			children = (
+				0A2778DD200EF6D7002823A7 /* LLPayViewController.swift */,
+				0A2778DE200EF6D7002823A7 /* LLPayViewController.xib */,
+			);
+			path = "用户缴费";
+			sourceTree = "<group>";
+		};
+		0A2778D6200EF513002823A7 /* 意见反馈 */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48E81FEBE60400B48012 /* LLIdeaViewController.swift */,
+				0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */,
+			);
+			path = "意见反馈";
+			sourceTree = "<group>";
+		};
+		0A2778D7200EF542002823A7 /* 用户注册 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */,
+				0AE02F4E1FF4838B002B9A1E /* LLRegisterViewController.swift */,
+			);
+			path = "用户注册";
+			sourceTree = "<group>";
+		};
+		0A2778D9200EF574002823A7 /* 修改密码 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */,
+				0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */,
+			);
+			path = "修改密码";
+			sourceTree = "<group>";
+		};
+		0A2778DA200EF5FB002823A7 /* 水表计量 */ = {
 			isa = PBXGroup;
 			children = (
 				0AE02F411FF3B653002B9A1E /* LLWaterViewController.swift */,
-				0AE02F451FF3B662002B9A1E /* LLEnergyViewController.swift */,
-				0AE02F491FF3B670002B9A1E /* LLGasViewController.swift */,
 				0AE02F421FF3B653002B9A1E /* LLWaterViewController.xib */,
+			);
+			path = "水表计量";
+			sourceTree = "<group>";
+		};
+		0A2778DB200EF612002823A7 /* 电表计量 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE02F451FF3B662002B9A1E /* LLEnergyViewController.swift */,
 				0AE02F461FF3B662002B9A1E /* LLEnergyViewController.xib */,
+			);
+			path = "电表计量";
+			sourceTree = "<group>";
+		};
+		0A2778DC200EF635002823A7 /* 天然气计量 */ = {
+			isa = PBXGroup;
+			children = (
+				0AE02F491FF3B670002B9A1E /* LLGasViewController.swift */,
 				0AE02F4A1FF3B670002B9A1E /* LLGasViewController.xib */,
 			);
-			path = "水电计量";
+			path = "天然气计量";
+			sourceTree = "<group>";
+		};
+		0AE02F4D1FF3B732002B9A1E /* 计量管理 */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48D31FEBE51C00B48012 /* LLMeasureViewController.swift */,
+				0AFB48D51FEBE51C00B48012 /* LLMeasureViewController.xib */,
+				0A2778DC200EF635002823A7 /* 天然气计量 */,
+				0A2778DB200EF612002823A7 /* 电表计量 */,
+				0A2778DA200EF5FB002823A7 /* 水表计量 */,
+			);
+			path = "计量管理";
 			sourceTree = "<group>";
 		};
 		0AFB48AD1FEBE3DE00B48012 = {
@@ -163,6 +265,13 @@
 		0AFB48CB1FEBE44700B48012 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				0A2778D6200EF513002823A7 /* 意见反馈 */,
+				0A2778D5200EF507002823A7 /* 用户缴费 */,
+				0A2778D4200EF4FF002823A7 /* 客服管理 */,
+				0A2778D3200EF4F1002823A7 /* 物业设备管理 */,
+				0A2778D2200EF4E0002823A7 /* 档案管理 */,
+				0A2778D1200EF3C3002823A7 /* 系统设置 */,
+				0AE02F4D1FF3B732002B9A1E /* 计量管理 */,
 				0AFB48D21FEBE51C00B48012 /* controller */,
 				0AFB48D41FEBE51C00B48012 /* xib */,
 			);
@@ -186,18 +295,10 @@
 		0AFB48D21FEBE51C00B48012 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				0AFB48D31FEBE51C00B48012 /* LLMeasureViewController.swift */,
-				0AFB48D81FEBE55000B48012 /* LLFilesViewController.swift */,
-				0AFB48DC1FEBE57400B48012 /* LLEquipmentViewController.swift */,
-				0AFB48E01FEBE5AB00B48012 /* LLCustomerServiceViewController.swift */,
 				0AFB48E41FEBE5E100B48012 /* LLUserViewController.swift */,
-				0AFB48E81FEBE60400B48012 /* LLIdeaViewController.swift */,
 				0AFB48EC1FEC98C800B48012 /* LLRootViewController.swift */,
 				0AFB48F01FECA7BC00B48012 /* LLLoginViewController.swift */,
-				0AE02F4E1FF4838B002B9A1E /* LLRegisterViewController.swift */,
-				0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */,
 				0A82730B1FECC29F00C70AE1 /* LLViewController.swift */,
-				0AE02F4D1FF3B732002B9A1E /* 水电计量 */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -205,17 +306,10 @@
 		0AFB48D41FEBE51C00B48012 /* xib */ = {
 			isa = PBXGroup;
 			children = (
-				0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */,
-				0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */,
 				0A82730C1FECC29F00C70AE1 /* LLViewController.xib */,
-				0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */,
-				0AFB48D91FEBE55000B48012 /* LLFilesViewController.xib */,
 				0AFB48ED1FEC98C800B48012 /* LLRootViewController.xib */,
-				0AFB48DD1FEBE57400B48012 /* LLEquipmentViewController.xib */,
-				0AFB48E11FEBE5AB00B48012 /* LLCustomerServiceViewController.xib */,
 				0AFB48E51FEBE5E100B48012 /* LLUserViewController.xib */,
 				0AFB48E91FEBE60400B48012 /* LLIdeaViewController.xib */,
-				0AFB48D51FEBE51C00B48012 /* LLMeasureViewController.xib */,
 			);
 			path = xib;
 			sourceTree = "<group>";
@@ -317,6 +411,7 @@
 				0AFB48DF1FEBE57400B48012 /* LLEquipmentViewController.xib in Resources */,
 				0AFB48FA1FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg in Resources */,
 				0AFB48F51FECA8D600B48012 /* Assets.xcassets in Resources */,
+				0A2778E0200EF6D7002823A7 /* LLPayViewController.xib in Resources */,
 				0AFB48EB1FEBE60400B48012 /* LLIdeaViewController.xib in Resources */,
 				0AE02F441FF3B653002B9A1E /* LLWaterViewController.xib in Resources */,
 				0AFB48D71FEBE51C00B48012 /* LLMeasureViewController.xib in Resources */,
@@ -408,6 +503,7 @@
 				0AFB48DA1FEBE55000B48012 /* LLFilesViewController.swift in Sources */,
 				0AFB48D61FEBE51C00B48012 /* LLMeasureViewController.swift in Sources */,
 				0AFB48EE1FEC98C800B48012 /* LLRootViewController.swift in Sources */,
+				0A2778DF200EF6D7002823A7 /* LLPayViewController.swift in Sources */,
 				0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */,
 				0A82730D1FECC29F00C70AE1 /* LLViewController.swift in Sources */,
 				0AFB48DE1FEBE57400B48012 /* LLEquipmentViewController.swift in Sources */,
