@@ -18,35 +18,35 @@ class LLRootViewController: UITabBarController {
         let measureViewController = LLMeasureViewController()
         let filesViewController = LLFilesViewController()
         let customerViewController = LLCustomerServiceViewController()
-        let userViewController = LLUserViewController()
+        let payViewController = LLPayViewController()
         let ideaViewController = LLIdeaViewController()
         
         //给控制器设置title
         measureViewController.title = "计量管理"
         filesViewController.title = "档案管理"
         customerViewController.title = "客服管理"
-        userViewController.title = "用户管理"
+        payViewController.title = "用户缴费"
         ideaViewController.title = "意见反馈"
         
         //设置背景
         measureViewController.view.backgroundColor = UIColor.gray
         filesViewController.view.backgroundColor = UIColor.gray
         customerViewController.view.backgroundColor = UIColor.gray
-        userViewController.view.backgroundColor = UIColor.gray
+        payViewController.view.backgroundColor = UIColor.gray
         ideaViewController.view.backgroundColor = UIColor.gray
         
         //初始化导航栏控制器
         let measureNVC = UINavigationController.init(rootViewController: measureViewController)
         let filesNVC = UINavigationController.init(rootViewController: filesViewController)
         let customerNVC = UINavigationController.init(rootViewController: customerViewController)
-        let userNVC = UINavigationController.init(rootViewController: userViewController)
+        let userNVC = UINavigationController.init(rootViewController: payViewController)
         let ideaNVC = UINavigationController.init(rootViewController: ideaViewController)
         
         //设置导航栏标题
         measureNVC.tabBarItem.title = "设备管理"
         filesNVC.tabBarItem.title = "档案管理"
         customerNVC.tabBarItem.title = "客服管理"
-        userNVC.tabBarItem.title = "用户管理"
+        userNVC.tabBarItem.title = "用户缴费"
         ideaNVC.tabBarItem.title = "意见反馈"
         
         //给标签加上图标

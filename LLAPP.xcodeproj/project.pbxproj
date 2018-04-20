@@ -25,6 +25,8 @@
 		0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */; };
 		0AE02F561FF49AD8002B9A1E /* LLResetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */; };
 		0AE02F571FF49AD8002B9A1E /* LLResetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */; };
+		0AE077FE203BC62D00AC1996 /* LLTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AE077FC203BC62D00AC1996 /* LLTableViewController.swift */; };
+		0AE077FF203BC62D00AC1996 /* LLTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AE077FD203BC62D00AC1996 /* LLTableViewController.xib */; };
 		0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */; };
 		0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */; };
 		0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */; };
@@ -46,8 +48,6 @@
 		0AFB48F21FECA7BC00B48012 /* LLLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB48F01FECA7BC00B48012 /* LLLoginViewController.swift */; };
 		0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */; };
 		0AFB48F51FECA8D600B48012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F41FECA8D600B48012 /* Assets.xcassets */; };
-		0AFB48F91FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F71FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png */; };
-		0AFB48FA1FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB48F81FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg */; };
 		B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -70,6 +70,8 @@
 		0AE02F4F1FF4838B002B9A1E /* LLRegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLRegisterViewController.xib; sourceTree = "<group>"; };
 		0AE02F541FF49AD8002B9A1E /* LLResetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLResetViewController.swift; sourceTree = "<group>"; };
 		0AE02F551FF49AD8002B9A1E /* LLResetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLResetViewController.xib; sourceTree = "<group>"; };
+		0AE077FC203BC62D00AC1996 /* LLTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLTableViewController.swift; sourceTree = "<group>"; };
+		0AE077FD203BC62D00AC1996 /* LLTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLTableViewController.xib; sourceTree = "<group>"; };
 		0AFB48B61FEBE3DE00B48012 /* LLAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LLAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -93,8 +95,6 @@
 		0AFB48F01FECA7BC00B48012 /* LLLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLLoginViewController.swift; sourceTree = "<group>"; };
 		0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LLLoginViewController.xib; sourceTree = "<group>"; };
 		0AFB48F41FECA8D600B48012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AFB48F71FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = E0F219DC4850BEDEF282DAFBBD6BA0EC.png; sourceTree = "<group>"; };
-		0AFB48F81FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = D77B2E7932BC08CFEA45D685B0049FAB.jpg; sourceTree = "<group>"; };
 		50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LLAPP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.release.xcconfig"; sourceTree = "<group>"; };
 		A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -143,13 +143,13 @@
 			path = "物业设备管理";
 			sourceTree = "<group>";
 		};
-		0A2778D4200EF4FF002823A7 /* 客服管理 */ = {
+		0A2778D4200EF4FF002823A7 /* 客服中心 */ = {
 			isa = PBXGroup;
 			children = (
 				0AFB48E01FEBE5AB00B48012 /* LLCustomerServiceViewController.swift */,
 				0AFB48E11FEBE5AB00B48012 /* LLCustomerServiceViewController.xib */,
 			);
-			path = "客服管理";
+			path = "客服中心";
 			sourceTree = "<group>";
 		};
 		0A2778D5200EF507002823A7 /* 用户缴费 */ = {
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				0AFB48E81FEBE60400B48012 /* LLIdeaViewController.swift */,
-				0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */,
+				0AFB48E91FEBE60400B48012 /* LLIdeaViewController.xib */,
 			);
 			path = "意见反馈";
 			sourceTree = "<group>";
@@ -215,6 +215,19 @@
 			path = "天然气计量";
 			sourceTree = "<group>";
 		};
+		0ABB0D79204CF45A00F78E8E /* public */ = {
+			isa = PBXGroup;
+			children = (
+				0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */,
+				0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */,
+				0AFB48F41FECA8D600B48012 /* Assets.xcassets */,
+				0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */,
+				0AFB48C21FEBE3DF00B48012 /* LaunchScreen.storyboard */,
+				0AFB48C51FEBE3DF00B48012 /* Info.plist */,
+			);
+			path = public;
+			sourceTree = "<group>";
+		};
 		0AE02F4D1FF3B732002B9A1E /* 计量管理 */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,16 +261,9 @@
 		0AFB48B81FEBE3DE00B48012 /* LLAPP */ = {
 			isa = PBXGroup;
 			children = (
+				0ABB0D79204CF45A00F78E8E /* public */,
 				0AFB48F61FECAA5100B48012 /* Source */,
 				0AFB48CB1FEBE44700B48012 /* Controller */,
-				0AFB48CC1FEBE44700B48012 /* Model */,
-				0AFB48CD1FEBE44700B48012 /* View */,
-				0AFB48B91FEBE3DE00B48012 /* AppDelegate.swift */,
-				0AFB48BB1FEBE3DF00B48012 /* ViewController.swift */,
-				0AFB48F41FECA8D600B48012 /* Assets.xcassets */,
-				0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */,
-				0AFB48C21FEBE3DF00B48012 /* LaunchScreen.storyboard */,
-				0AFB48C51FEBE3DF00B48012 /* Info.plist */,
 			);
 			path = LLAPP;
 			sourceTree = "<group>";
@@ -267,7 +273,7 @@
 			children = (
 				0A2778D6200EF513002823A7 /* 意见反馈 */,
 				0A2778D5200EF507002823A7 /* 用户缴费 */,
-				0A2778D4200EF4FF002823A7 /* 客服管理 */,
+				0A2778D4200EF4FF002823A7 /* 客服中心 */,
 				0A2778D3200EF4F1002823A7 /* 物业设备管理 */,
 				0A2778D2200EF4E0002823A7 /* 档案管理 */,
 				0A2778D1200EF3C3002823A7 /* 系统设置 */,
@@ -278,20 +284,6 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		0AFB48CC1FEBE44700B48012 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		0AFB48CD1FEBE44700B48012 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
 		0AFB48D21FEBE51C00B48012 /* controller */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +291,7 @@
 				0AFB48EC1FEC98C800B48012 /* LLRootViewController.swift */,
 				0AFB48F01FECA7BC00B48012 /* LLLoginViewController.swift */,
 				0A82730B1FECC29F00C70AE1 /* LLViewController.swift */,
+				0AE077FC203BC62D00AC1996 /* LLTableViewController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -306,10 +299,11 @@
 		0AFB48D41FEBE51C00B48012 /* xib */ = {
 			isa = PBXGroup;
 			children = (
+				0AFB48F11FECA7BC00B48012 /* LLLoginViewController.xib */,
+				0AE077FD203BC62D00AC1996 /* LLTableViewController.xib */,
 				0A82730C1FECC29F00C70AE1 /* LLViewController.xib */,
 				0AFB48ED1FEC98C800B48012 /* LLRootViewController.xib */,
 				0AFB48E51FEBE5E100B48012 /* LLUserViewController.xib */,
-				0AFB48E91FEBE60400B48012 /* LLIdeaViewController.xib */,
 			);
 			path = xib;
 			sourceTree = "<group>";
@@ -317,8 +311,6 @@
 		0AFB48F61FECAA5100B48012 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				0AFB48F81FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg */,
-				0AFB48F71FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -409,18 +401,17 @@
 				0AFB48C41FEBE3DF00B48012 /* LaunchScreen.storyboard in Resources */,
 				0AE02F4C1FF3B670002B9A1E /* LLGasViewController.xib in Resources */,
 				0AFB48DF1FEBE57400B48012 /* LLEquipmentViewController.xib in Resources */,
-				0AFB48FA1FECAA6500B48012 /* D77B2E7932BC08CFEA45D685B0049FAB.jpg in Resources */,
 				0AFB48F51FECA8D600B48012 /* Assets.xcassets in Resources */,
 				0A2778E0200EF6D7002823A7 /* LLPayViewController.xib in Resources */,
 				0AFB48EB1FEBE60400B48012 /* LLIdeaViewController.xib in Resources */,
 				0AE02F441FF3B653002B9A1E /* LLWaterViewController.xib in Resources */,
 				0AFB48D71FEBE51C00B48012 /* LLMeasureViewController.xib in Resources */,
 				0A82730E1FECC29F00C70AE1 /* LLViewController.xib in Resources */,
+				0AE077FF203BC62D00AC1996 /* LLTableViewController.xib in Resources */,
 				0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */,
 				0AFB48DB1FEBE55000B48012 /* LLFilesViewController.xib in Resources */,
 				0AE02F571FF49AD8002B9A1E /* LLResetViewController.xib in Resources */,
 				0AFB48E31FEBE5AB00B48012 /* LLCustomerServiceViewController.xib in Resources */,
-				0AFB48F91FECAA6500B48012 /* E0F219DC4850BEDEF282DAFBBD6BA0EC.png in Resources */,
 				0AE02F481FF3B662002B9A1E /* LLEnergyViewController.xib in Resources */,
 				0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */,
 				0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */,
@@ -511,6 +502,7 @@
 				0AE02F431FF3B653002B9A1E /* LLWaterViewController.swift in Sources */,
 				0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */,
 				0AFB48E61FEBE5E100B48012 /* LLUserViewController.swift in Sources */,
+				0AE077FE203BC62D00AC1996 /* LLTableViewController.swift in Sources */,
 				0AFB48EA1FEBE60400B48012 /* LLIdeaViewController.swift in Sources */,
 				0AE02F501FF4838B002B9A1E /* LLRegisterViewController.swift in Sources */,
 			);

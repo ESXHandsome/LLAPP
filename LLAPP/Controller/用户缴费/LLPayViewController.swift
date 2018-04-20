@@ -10,12 +10,33 @@ import UIKit
 
 class LLPayViewController: LLViewController {
 
+    @IBAction func 物业事件(_ sender: Any) {
+    }
+    @IBOutlet weak var 供暖事件: UIButton!
+    @IBAction func 水电事件(_ sender: Any) {
+    }
+    @IBOutlet weak var 水电: UIButton!
+    
+    @IBOutlet weak var 供暖: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.水电.layer.cornerRadius = 6.0
+        self.水电.layer.masksToBounds = true
+        self.水电.backgroundColor = UIColor.white
+        
+        self.供暖.layer.cornerRadius = 6.0
+        self.供暖.layer.masksToBounds = true
+        self.供暖.backgroundColor = UIColor.white
+        
+        self.物业.layer.cornerRadius = 6.0
+        self.物业.layer.masksToBounds = true
+        self.物业.backgroundColor = UIColor.white
+
         // Do any additional setup after loading the view.
     }
-
+    @IBOutlet weak var 物业: UIButton!
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

@@ -1,18 +1,18 @@
 //
-//  LLCustomerServiceViewController.swift
+//  LLTableViewController.swift
 //  LLAPP
 //
-//  Created by lv on 2017/12/21.
-//  Copyright © 2017年 lv. All rights reserved.
+//  Created by Ying on 2018/2/20.
+//  Copyright © 2018年 Ying. All rights reserved.
 //
 
 import UIKit
 
-class LLCustomerServiceViewController: LLViewController {
+class LLTableViewController: UIViewController {
 
+    @IBOutlet weak var table: UITableView!
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
 

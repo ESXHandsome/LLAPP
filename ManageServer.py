@@ -13,18 +13,19 @@ collection = db.login
 #login
 @app.route('/login',methods=['POST'])
 def login():
-    user = request.form.get('name')
-    pwd = request.form.get('pwd')
-    dic = collection.find_one({"user":user})
-    print dic
-    if dic != None:
-        print  dic[u'password']
-        if dic[u'password'] == pwd:
-            return json.dumps({'status':'login'})
-    if user == 'admin' and pwd == "admin":
-        return json.dumps({'status':'login'})
-    else:
-        return json.dumps({'status':'unlogin'})
+    return json.dumps({'status':'login'})
+    # user = request.form.get('name')
+    # pwd = request.form.get('pwd')
+    # dic = collection.find_one({"user":user})
+    # print dic
+    # if dic != None:
+    #     print  dic[u'password']
+    #     if dic[u'password'] == pwd:
+    #         return json.dumps({'status':'login'})
+    # if user == 'admin' and pwd == "admin":
+    #     return json.dumps({'status':'login'})
+    # else:
+    #     return json.dumps({'status':'unlogin'})
 
 #register
 @app.route('/register',methods=['POST'])
@@ -122,6 +123,10 @@ def suggest_custom():
 @app.route('/suggest/user')
 def suggest_user():
     return 'suggest_user'
+
+@app.route('/')
+def name():
+    return "1"
 
 if __name__ == '__main__':
     app.debug = True

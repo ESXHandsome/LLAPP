@@ -9,10 +9,26 @@
 import UIKit
 
 class LLIdeaViewController: LLViewController {
-
+    @IBAction func 业主事件(_ sender: Any) {
+    }
+    
+    @IBAction func 客户事件(_ sender: Any) {
+    }
+    @IBOutlet weak var 客户: UIButton!
+    
+    @IBOutlet weak var 业主: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.客户.layer.cornerRadius = 6.0
+        self.客户.layer.masksToBounds = true
+        self.客户.backgroundColor = UIColor.white
+        
+        
+        self.业主.layer.cornerRadius = 6.0
+        self.业主.layer.masksToBounds = true
+        self.业主.backgroundColor = UIColor.white
+        
         // Do any additional setup after loading the view.
     }
 

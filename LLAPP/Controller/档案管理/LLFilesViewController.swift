@@ -9,10 +9,28 @@
 import UIKit
 
 class LLFilesViewController: LLViewController {
+    @IBAction func 业主按钮事件(_ sender: Any) {
+    }
+    
 
+    @IBAction func 房产按钮事件(_ sender: Any) {
+    }
+    @IBOutlet weak var 业主: UIButton!
+    
+    @IBOutlet weak var 房产: UIButton!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.业主.layer.cornerRadius = 6.0
+        self.业主.layer.masksToBounds = true
+        self.业主.backgroundColor = UIColor.white
+        
+        self.房产.layer.cornerRadius = 6.0
+        self.房产.layer.masksToBounds = true
+        self.房产.backgroundColor = UIColor.white
+    
         // Do any additional setup after loading the view.
     }
 
