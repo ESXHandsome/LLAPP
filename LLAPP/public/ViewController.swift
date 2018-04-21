@@ -13,7 +13,8 @@ class ViewController: LLViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let image = UIImageView.init(frame: UIScreen.main.bounds)
-        // Do any additional setup after loading the view, typically from a nib.
+        // Do any additional setup after loadin
+//        g the view, typically from a nib.
         image.setImageWith(URL.init(string: "https://www.baidu.com/img/bd_logo1.png")!)
         self.view.addSubview(image)
         
