@@ -10,7 +10,9 @@ import UIKit
 import AFNetworking
 
 class LLWaterViewController: LLViewController {
-    @IBOutlet weak var tableView: UITableView!
+    
+    
+    @IBOutlet weak var tabview: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,23 +28,40 @@ class LLWaterViewController: LLViewController {
             print(error)
         }
         
+        self.title = "水表计量"
+        regTitleTabMyCell()
+
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+}
+
+extension LLWaterViewController:UITableViewDelegate,UITableViewDataSource{
+    
+    //定制的TitleTabcell
+    func regTitleTabMyCell() {
+        let nib = UINib(nibName: "publicCell", bundle: nil)
+        tabview.register(nib, forCellReuseIdentifier: "waterCell")
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 10
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "waterCell") as! publicCell
+        cell.nameLbl.text = "姓名:大哥"
+        cell.totalLbl.text = "金额:120"
+        //cell颜色为无色
+        cell.selectionStyle = .none
+        //cell.contentView.backgroundColor = UIColor(hexString: dataSource[indexPath.row].bgcolor!)
+        return cell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
     }
-    */
-
+    //cell高度
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
 }

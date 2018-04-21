@@ -10,6 +10,8 @@ import UIKit
 
 class LLIdeaViewController: LLViewController {
     @IBAction func 业主事件(_ sender: Any) {
+        self.navigationController?.pushViewController(suggestViewController(), animated: true)
+
     }
     
     @IBAction func 客户事件(_ sender: Any) {

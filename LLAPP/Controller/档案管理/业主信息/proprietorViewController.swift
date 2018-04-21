@@ -1,26 +1,22 @@
 //
-//  LLGasViewController.swift
+//  proprietorViewController.swift
 //  LLAPP
 //
-//  Created by Ying on 2017/12/27.
-//  Copyright © 2017年 Ying. All rights reserved.
+//  Created by 贾文鹏 on 2018/4/21.
+//  Copyright © 2018年 Ying. All rights reserved.
 //
 
 import UIKit
 import AFNetworking
 
-class LLGasViewController: UIViewController {
+class proprietorViewController: LLViewController {
 
-    var dataSource = [publicModel]()
-
-    
     @IBOutlet weak var tabview: UITableView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "天然气计量"
+        self.title = "业主信息"
         regTitleTabMyCell()
-
+        
         // Do any additional setup after loading the view.
     }
     
@@ -49,20 +45,20 @@ class LLGasViewController: UIViewController {
         }) { (task, error) in
         }
     }
-
+    
 }
-extension LLGasViewController:UITableViewDelegate,UITableViewDataSource{
+extension proprietorViewController:UITableViewDelegate,UITableViewDataSource{
     
     //定制的TitleTabcell
     func regTitleTabMyCell() {
         let nib = UINib(nibName: "publicCell", bundle: nil)
-        tabview.register(nib, forCellReuseIdentifier: "gasCell")
+        tabview.register(nib, forCellReuseIdentifier: "propertCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "gasCell") as! publicCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "propertCell") as! publicCell
         cell.nameLbl.text = "姓名:小明"
         cell.totalLbl.text = "金额:100"
         //cell颜色为无色
@@ -78,5 +74,6 @@ extension LLGasViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
     }
-
+    
 }
+

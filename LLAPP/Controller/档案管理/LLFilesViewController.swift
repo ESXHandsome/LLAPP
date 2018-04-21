@@ -10,10 +10,14 @@ import UIKit
 
 class LLFilesViewController: LLViewController {
     @IBAction func 业主按钮事件(_ sender: Any) {
+        self.navigationController?.pushViewController(proprietorViewController(), animated: true)
+        
     }
     
 
     @IBAction func 房产按钮事件(_ sender: Any) {
+        self.navigationController?.pushViewController(propertyViewController(), animated: true)
+        
     }
     @IBOutlet weak var 业主: UIButton!
     

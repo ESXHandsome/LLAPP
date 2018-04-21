@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="KGk-i7-Jjw" customClass="publicCell" customModule="LLAPP" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="342" height="121"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="342" height="120.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PoE-PG-YAD">
+                        <rect key="frame" x="16" y="11" width="310" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="金额：" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4D-dL-3My">
+                        <rect key="frame" x="16" y="60.5" width="310" height="49.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="i4D-dL-3My" firstAttribute="top" secondItem="PoE-PG-YAD" secondAttribute="bottom" id="1tX-9m-oga"/>
+                    <constraint firstItem="PoE-PG-YAD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="30s-mm-OXq"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="i4D-dL-3My" secondAttribute="trailing" id="7Mb-KE-QY0"/>
+                    <constraint firstItem="i4D-dL-3My" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="9XO-RS-ozG"/>
+                    <constraint firstItem="i4D-dL-3My" firstAttribute="height" secondItem="PoE-PG-YAD" secondAttribute="height" id="GDM-SK-XUO"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="PoE-PG-YAD" secondAttribute="trailing" id="Jiz-6A-amo"/>
+                    <constraint firstItem="PoE-PG-YAD" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="OrJ-4o-fRp"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="i4D-dL-3My" secondAttribute="bottom" id="mwP-BJ-oXP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="nameLbl" destination="PoE-PG-YAD" id="Ofe-d4-dbt"/>
+                <outlet property="totalLbl" destination="i4D-dL-3My" id="9Ex-7x-Rzk"/>
+            </connections>
+            <point key="canvasLocation" x="45" y="92.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -10,7 +10,6 @@ import UIKit
 import AFNetworking
 //import LLRootViewController
 class ViewController: LLViewController {
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         let image = UIImageView.init(frame: UIScreen.main.bounds)

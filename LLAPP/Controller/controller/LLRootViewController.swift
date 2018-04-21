@@ -43,7 +43,7 @@ class LLRootViewController: UITabBarController {
         let ideaNVC = UINavigationController.init(rootViewController: ideaViewController)
         
         //设置导航栏标题
-        measureNVC.tabBarItem.title = "设备管理"
+        measureNVC.tabBarItem.title = "计量管理"
         filesNVC.tabBarItem.title = "档案管理"
         customerNVC.tabBarItem.title = "客服管理"
         userNVC.tabBarItem.title = "用户缴费"

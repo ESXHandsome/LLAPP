@@ -86,31 +86,36 @@ class LLLoginViewController: LLViewController {
     
     //登录逻辑
     func login(user:String,pwd:String) -> Void {
-        let urlString = "http://127.0.0.1:8888/login";
-        let manager = AFHTTPSessionManager()
-        let set = Set<String>(arrayLiteral: "text/html","text/plain","text/json","application/json", "text/javascript")
-        manager.responseSerializer.acceptableContentTypes = set
-        manager.requestSerializer.timeoutInterval = 30
-        let dic = ["name":user,"pwd":pwd]
-        manager.post(urlString, parameters:dic, progress:nil, success: { (task, json) in
-            print(json!)
-            if let dict = json as? Dictionary<String,Any>{
-                let result:String = dict["status"] as! String
-                print(result)
-                if result == "login"{
-                    self.present(LLRootViewController(), animated: true, completion: nil)
-                }else{
-                    let alert = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle:.alert)
-                    alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
-                    self.present(alert, animated: true, completion: nil)
-                }
-            }else{
-                print("json解析失败","请求接口:",urlString,"数据:",json as Any)
-            }
-        }) { (task, error) in
-        }
         
+        self.present(LLRootViewController(), animated: true, completion: nil)
+
     }
+//    func login(user:String,pwd:String) -> Void {
+//        let urlString = "http://127.0.0.1:8888/login";
+//        let manager = AFHTTPSessionManager()
+//        let set = Set<String>(arrayLiteral: "text/html","text/plain","text/json","application/json", "text/javascript")
+//        manager.responseSerializer.acceptableContentTypes = set
+//        manager.requestSerializer.timeoutInterval = 30
+//        let dic = ["name":user,"pwd":pwd]
+//        manager.post(urlString, parameters:dic, progress:nil, success: { (task, json) in
+//            print(json!)
+//            if let dict = json as? Dictionary<String,Any>{
+//                let result:String = dict["status"] as! String
+//                print(result)
+//                if result == "login"{
+//                    self.present(LLRootViewController(), animated: true, completion: nil)
+//                }else{
+//                    let alert = UIAlertController(title: "提示", message: "用户名或密码错误", preferredStyle:.alert)
+//                    alert.addAction(UIAlertAction(title: "确定", style: .cancel, handler: nil))
+//                    self.present(alert, animated: true, completion: nil)
+//                }
+//            }else{
+//                print("json解析失败","请求接口:",urlString,"数据:",json as Any)
+//            }
+//        }) { (task, error) in
+//        }
+//
+//    }
     
     // MARK: 字典转字符串
     func dicValueString(_ dic:[String : Any]) -> String?{
