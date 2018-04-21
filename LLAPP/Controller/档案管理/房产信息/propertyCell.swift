@@ -1,5 +1,5 @@
 //
-//  publicCell.swift
+//  propertyCell.swift
 //  LLAPP
 //
 //  Created by 贾文鹏 on 2018/4/21.
@@ -8,17 +8,24 @@
 
 import UIKit
 
-class publicCell: UITableViewCell {
+class propertyCell: UITableViewCell {
+
+    @IBOutlet weak var VIew: UIView!
     
-    @IBOutlet weak var nameLbl: UILabel!
+    @IBOutlet weak var owerLbl: UILabel!
     
-    @IBOutlet weak var totalLbl: UILabel!
-    @IBOutlet weak var View: UIView!
+    @IBOutlet weak var hourseLbl: UILabel!
+    
+    @IBOutlet weak var areaLbl: UILabel!
+    
+    @IBOutlet weak var deteLbl: UILabel!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.View.layer.masksToBounds = true;
-        self.View.layer.cornerRadius = 20;
+        self.VIew.layer.masksToBounds = true;
+        self.VIew.layer.cornerRadius = 20;
+
         // Initialization code
     }
 

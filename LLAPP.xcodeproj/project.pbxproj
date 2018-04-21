@@ -59,6 +59,10 @@
 		7731EA99208B15C100E9BB60 /* suggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EA97208B15C100E9BB60 /* suggestViewController.xib */; };
 		7731EA9C208B15EA00E9BB60 /* complaint ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EA9A208B15EA00E9BB60 /* complaint ViewController.swift */; };
 		7731EA9D208B15EA00E9BB60 /* complaint ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EA9B208B15EA00E9BB60 /* complaint ViewController.xib */; };
+		7731EAA2208B570800E9BB60 /* filesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAA0208B570800E9BB60 /* filesCellTableViewCell.swift */; };
+		7731EAA3208B570800E9BB60 /* filesCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */; };
+		7731EAA6208B5AE900E9BB60 /* propertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAA4208B5AE900E9BB60 /* propertyCell.swift */; };
+		7731EAA7208B5AE900E9BB60 /* propertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAA5208B5AE900E9BB60 /* propertyCell.xib */; };
 		B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -118,6 +122,10 @@
 		7731EA97208B15C100E9BB60 /* suggestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = suggestViewController.xib; sourceTree = "<group>"; };
 		7731EA9A208B15EA00E9BB60 /* complaint ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "complaint ViewController.swift"; sourceTree = "<group>"; };
 		7731EA9B208B15EA00E9BB60 /* complaint ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "complaint ViewController.xib"; sourceTree = "<group>"; };
+		7731EAA0208B570800E9BB60 /* filesCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filesCellTableViewCell.swift; sourceTree = "<group>"; };
+		7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = filesCellTableViewCell.xib; sourceTree = "<group>"; };
+		7731EAA4208B5AE900E9BB60 /* propertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyCell.swift; sourceTree = "<group>"; };
+		7731EAA5208B5AE900E9BB60 /* propertyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = propertyCell.xib; sourceTree = "<group>"; };
 		9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.release.xcconfig"; sourceTree = "<group>"; };
 		A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -366,6 +374,8 @@
 			children = (
 				7731EA90208B12F600E9BB60 /* proprietorViewController.swift */,
 				7731EA91208B12F600E9BB60 /* proprietorViewController.xib */,
+				7731EAA0208B570800E9BB60 /* filesCellTableViewCell.swift */,
+				7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */,
 			);
 			path = "业主信息";
 			sourceTree = "<group>";
@@ -375,6 +385,8 @@
 			children = (
 				7731EA8C208B11A900E9BB60 /* propertyViewController.swift */,
 				7731EA8D208B11A900E9BB60 /* propertyViewController.xib */,
+				7731EAA4208B5AE900E9BB60 /* propertyCell.swift */,
+				7731EAA5208B5AE900E9BB60 /* propertyCell.xib */,
 			);
 			path = "房产信息";
 			sourceTree = "<group>";
@@ -479,6 +491,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7731EAA3208B570800E9BB60 /* filesCellTableViewCell.xib in Resources */,
 				0AFB48C41FEBE3DF00B48012 /* LaunchScreen.storyboard in Resources */,
 				0AE02F4C1FF3B670002B9A1E /* LLGasViewController.xib in Resources */,
 				7731EA86208B058200E9BB60 /* publicCell.xib in Resources */,
@@ -502,6 +515,7 @@
 				0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */,
 				0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */,
 				0AFB48EF1FEC98C800B48012 /* LLRootViewController.xib in Resources */,
+				7731EAA7208B5AE900E9BB60 /* propertyCell.xib in Resources */,
 				0AFB48E71FEBE5E100B48012 /* LLUserViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -573,6 +587,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7731EAA6208B5AE900E9BB60 /* propertyCell.swift in Sources */,
 				0AE02F561FF49AD8002B9A1E /* LLResetViewController.swift in Sources */,
 				0AFB48E21FEBE5AB00B48012 /* LLCustomerServiceViewController.swift in Sources */,
 				0AE02F471FF3B662002B9A1E /* LLEnergyViewController.swift in Sources */,
@@ -588,6 +603,7 @@
 				0A82730D1FECC29F00C70AE1 /* LLViewController.swift in Sources */,
 				0AFB48DE1FEBE57400B48012 /* LLEquipmentViewController.swift in Sources */,
 				0AFB48F21FECA7BC00B48012 /* LLLoginViewController.swift in Sources */,
+				7731EAA2208B570800E9BB60 /* filesCellTableViewCell.swift in Sources */,
 				0AE02F431FF3B653002B9A1E /* LLWaterViewController.swift in Sources */,
 				0AFB48BA1FEBE3DE00B48012 /* AppDelegate.swift in Sources */,
 				0AFB48E61FEBE5E100B48012 /* LLUserViewController.swift in Sources */,

@@ -54,16 +54,18 @@ extension propertyViewController:UITableViewDelegate,UITableViewDataSource{
     
     //定制的TitleTabcell
     func regTitleTabMyCell() {
-        let nib = UINib(nibName: "publicCell", bundle: nil)
+        let nib = UINib(nibName: "propertyCell", bundle: nil)
         tabview.register(nib, forCellReuseIdentifier: "propertCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "propertCell") as! publicCell
-        cell.nameLbl.text = "姓名:小明"
-        cell.totalLbl.text = "金额:100"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "propertCell") as! propertyCell
+        cell.owerLbl.text = "小A"
+        cell.hourseLbl.text = "大神"
+        cell.areaLbl.text = "100"
+        cell.deteLbl.text = "2018.04.12"
         //cell颜色为无色
         cell.selectionStyle = .none
         //cell.contentView.backgroundColor = UIColor(hexString: dataSource[indexPath.row].bgcolor!)
@@ -75,7 +77,7 @@ extension propertyViewController:UITableViewDelegate,UITableViewDataSource{
     }
     //cell高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 130
     }
     
 }
