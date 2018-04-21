@@ -223,7 +223,6 @@
 				0AFB48F41FECA8D600B48012 /* Assets.xcassets */,
 				0AFB48BD1FEBE3DF00B48012 /* Main.storyboard */,
 				0AFB48C21FEBE3DF00B48012 /* LaunchScreen.storyboard */,
-				0AFB48C51FEBE3DF00B48012 /* Info.plist */,
 			);
 			path = public;
 			sourceTree = "<group>";
@@ -261,6 +260,7 @@
 		0AFB48B81FEBE3DE00B48012 /* LLAPP */ = {
 			isa = PBXGroup;
 			children = (
+				0AFB48C51FEBE3DF00B48012 /* Info.plist */,
 				0ABB0D79204CF45A00F78E8E /* public */,
 				0AFB48F61FECAA5100B48012 /* Source */,
 				0AFB48CB1FEBE44700B48012 /* Controller */,

@@ -54,15 +54,34 @@ def reset_pwd():
 
 @app.route('/measure/water')
 def measure_water():
-    return 'measure_water'
+    waterList = []
+    message = db.measure_water.find()
+    for i in message:
+        name = i["name"]
+        water = i["water"]
+        waterList.append({"name":name,"water":water})
+    return json.dumps(waterList)
+    # return json.dumps({'status':'OK'})
 
 @app.route('/measure/energy')
 def measure_energy():
-    return 'measure_energy'
+    energyList = []
+    message = db.measure_energy.find()
+    for i in message:
+        name = i["name"]
+        energy = i["energy"]
+        energyList.append({"name":name,"energy":energy})
+    return json.dumps(energyList)
 
 @app.route('/measure/gas')
 def measure_gas():
-    return 'measure_gas'
+    energyList = []
+    message = db.measure_gas.find()
+    for i in message:
+        name = i["name"]
+        energy = i["energy"]
+        energyList.append({"name":name,"energy":energy})
+    return json.dumps(energyList)
 
 @app.route('/file/proprietor')
 def file_proprietor():
