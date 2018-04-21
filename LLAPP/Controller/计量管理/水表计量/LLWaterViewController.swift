@@ -11,7 +11,7 @@ import AFNetworking
 
 class LLWaterViewController: LLViewController {
     
-    
+    var dataSource = [Any]()
     @IBOutlet weak var tabview: UITableView!
     
     override func viewDidLoad() {
@@ -22,7 +22,13 @@ class LLWaterViewController: LLViewController {
         manager.responseSerializer.acceptableContentTypes = set
         manager.requestSerializer.timeoutInterval = 30
         manager.get(urlString, parameters: nil, progress: nil, success: { (task, json) in
-            print(json!)
+            if let dict = json as? Dictionary<String,Any>{
+                let array:Array = dict["data"]  as! Array<Any>
+                self.dataSource = array
+            }
+            DispatchQueue.main.async(execute: {
+                self.tabview?.reloadData()
+            })
         }) { (task, error) in
             print("失败了")
             print(error)
@@ -44,12 +50,13 @@ extension LLWaterViewController:UITableViewDelegate,UITableViewDataSource{
         tabview.register(nib, forCellReuseIdentifier: "waterCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataSource.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "waterCell") as! publicCell
-        cell.nameLbl.text = "姓名:大哥"
-        cell.totalLbl.text = "金额:120"
+        let model = dataSource[indexPath.row] as! Dictionary<String, Any>
+        cell.nameLbl.text = model["name"] as? String
+        cell.totalLbl.text = model["water"] as? String
         //cell颜色为无色
         cell.selectionStyle = .none
         //cell.contentView.backgroundColor = UIColor(hexString: dataSource[indexPath.row].bgcolor!)

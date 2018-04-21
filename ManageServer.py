@@ -60,7 +60,7 @@ def measure_water():
         name = i["name"]
         water = i["water"]
         waterList.append({"name":name,"water":water})
-    return json.dumps(waterList)
+    return json.dumps({"data":waterList})
     # return json.dumps({'status':'OK'})
 
 @app.route('/measure/energy')
@@ -71,17 +71,17 @@ def measure_energy():
         name = i["name"]
         energy = i["energy"]
         energyList.append({"name":name,"energy":energy})
-    return json.dumps(energyList)
+    return json.dumps({"data":energyList})
 
 @app.route('/measure/gas')
 def measure_gas():
-    energyList = []
+    gasList = []
     message = db.measure_gas.find()
     for i in message:
         name = i["name"]
-        energy = i["energy"]
-        energyList.append({"name":name,"energy":energy})
-    return json.dumps(energyList)
+        gas = i["gas"]
+        gasList.append({"name":name,"gas":gas})
+    return json.dumps({"data":gasList})
 
 @app.route('/file/proprietor')
 def file_proprietor():

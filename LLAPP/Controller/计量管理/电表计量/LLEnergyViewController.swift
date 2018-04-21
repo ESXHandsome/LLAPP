@@ -7,16 +7,33 @@
 //
 
 import UIKit
-
+import AFNetworking
 class LLEnergyViewController: LLViewController {
     
     @IBOutlet weak var tabview: UITableView!
-    
+    var dataSource = [Any]()
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "电表计量"
         regTitleTabMyCell()
-
+        let urlString = "http://127.0.0.1:8888/measure/energy";
+        let manager = AFHTTPSessionManager()
+        let set = Set<String>(arrayLiteral: "text/html","text/plain","text/json","application/json", "text/javascript")
+        manager.responseSerializer.acceptableContentTypes = set
+        manager.requestSerializer.timeoutInterval = 30
+        manager.get(urlString, parameters: nil, progress: nil, success: { (task, json) in
+            if let dict = json as? Dictionary<String,Any>{
+                print(dict)
+                let array:Array = dict["data"]  as! Array<Any>
+                self.dataSource = array
+            }
+            DispatchQueue.main.async(execute: {
+                self.tabview?.reloadData()
+            })
+        }) { (task, error) in
+            print("失败了")
+            print(error)
+        }
         // Do any additional setup after loading the view.
     }
 
@@ -32,12 +49,13 @@ extension LLEnergyViewController:UITableViewDelegate,UITableViewDataSource{
         tabview.register(nib, forCellReuseIdentifier: "energyCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return dataSource.count
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "energyCell") as! publicCell
-        cell.nameLbl.text = "姓名:小红"
-        cell.totalLbl.text = "金额:50"
+        let model = dataSource[indexPath.row] as! Dictionary<String, Any>
+        cell.nameLbl.text =  model["name"] as? String
+        cell.totalLbl.text =  model["energy"] as? String
         //cell颜色为无色
         cell.selectionStyle = .none
         //cell.contentView.backgroundColor = UIColor(hexString: dataSource[indexPath.row].bgcolor!)
