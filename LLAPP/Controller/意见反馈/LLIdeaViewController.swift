@@ -10,11 +10,21 @@ import UIKit
 
 class LLIdeaViewController: LLViewController {
     @IBAction func 业主事件(_ sender: Any) {
-        self.navigationController?.pushViewController(suggestViewController(), animated: true)
+        
+        let vc = suggestViewController()
+        vc.titleString = "业主投诉"
+        vc.netString = ""
+        self.navigationController?.pushViewController(vc, animated: true)
 
     }
     
     @IBAction func 客户事件(_ sender: Any) {
+        
+        let vc = suggestViewController()
+        vc.titleString = "客户留言"
+        vc.netString = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     @IBOutlet weak var 客户: UIButton!
     

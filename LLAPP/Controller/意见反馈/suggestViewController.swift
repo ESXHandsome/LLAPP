@@ -9,11 +9,16 @@
 import UIKit
 import AFNetworking
 class suggestViewController: LLViewController {
+    
     @IBOutlet weak var tabview: UITableView!
-    var dataSource = [publicModel]()
+    
+    var titleString: String?
+    var netString: String?
+    var dataSource = [Any]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "客户留言"
+        self.title = titleString
         regTitleTabMyCell()
         
         // Do any additional setup after loading the view.
@@ -50,16 +55,16 @@ extension suggestViewController:UITableViewDelegate,UITableViewDataSource{
     
     //定制的TitleTabcell
     func regTitleTabMyCell() {
-        let nib = UINib(nibName: "publicCell", bundle: nil)
-        tabview.register(nib, forCellReuseIdentifier: "propertCell")
+        let nib = UINib(nibName: "suggestCell", bundle: nil)
+        tabview.register(nib, forCellReuseIdentifier: "suggestCell")
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 10
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "propertCell") as! publicCell
-        cell.nameLbl.text = "姓名:小明"
-        cell.totalLbl.text = "金额:100"
+        let cell = tableView.dequeueReusableCell(withIdentifier: "suggestCell") as! suggestCell
+        cell.nameLbl.text = "小明"
+        cell.contentLbl.text = "我不介意别人说我还没有长大每天梦想唱歌跳舞 学画画稻田里捕青顺着牵牛花的枝蔓爬到月亮和星星对话"
         //cell颜色为无色
         cell.selectionStyle = .none
         //cell.contentView.backgroundColor = UIColor(hexString: dataSource[indexPath.row].bgcolor!)
@@ -71,7 +76,7 @@ extension suggestViewController:UITableViewDelegate,UITableViewDataSource{
     }
     //cell高度
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 200
     }
     
 }

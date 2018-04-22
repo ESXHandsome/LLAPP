@@ -57,8 +57,6 @@
 		7731EA93208B12F600E9BB60 /* proprietorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EA91208B12F600E9BB60 /* proprietorViewController.xib */; };
 		7731EA98208B15C100E9BB60 /* suggestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EA96208B15C100E9BB60 /* suggestViewController.swift */; };
 		7731EA99208B15C100E9BB60 /* suggestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EA97208B15C100E9BB60 /* suggestViewController.xib */; };
-		7731EA9C208B15EA00E9BB60 /* complaint ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EA9A208B15EA00E9BB60 /* complaint ViewController.swift */; };
-		7731EA9D208B15EA00E9BB60 /* complaint ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EA9B208B15EA00E9BB60 /* complaint ViewController.xib */; };
 		7731EAA2208B570800E9BB60 /* filesCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAA0208B570800E9BB60 /* filesCellTableViewCell.swift */; };
 		7731EAA3208B570800E9BB60 /* filesCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */; };
 		7731EAA6208B5AE900E9BB60 /* propertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAA4208B5AE900E9BB60 /* propertyCell.swift */; };
@@ -67,6 +65,12 @@
 		7731EAB0208C287A00E9BB60 /* customerServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAAE208C287A00E9BB60 /* customerServiceViewController.xib */; };
 		7731EAB3208C2C1E00E9BB60 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAB1208C2C1E00E9BB60 /* CustomerCell.swift */; };
 		7731EAB4208C2C1E00E9BB60 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAB2208C2C1E00E9BB60 /* CustomerCell.xib */; };
+		7731EAB7208C36A400E9BB60 /* userFeeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAB5208C36A400E9BB60 /* userFeeViewController.swift */; };
+		7731EAB8208C36A400E9BB60 /* userFeeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAB6208C36A400E9BB60 /* userFeeViewController.xib */; };
+		7731EABB208C377E00E9BB60 /* userFeeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAB9208C377E00E9BB60 /* userFeeCell.swift */; };
+		7731EABC208C377E00E9BB60 /* userFeeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EABA208C377E00E9BB60 /* userFeeCell.xib */; };
+		7731EABF208C3DAE00E9BB60 /* suggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EABD208C3DAE00E9BB60 /* suggestCell.swift */; };
+		7731EAC0208C3DAE00E9BB60 /* suggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EABE208C3DAE00E9BB60 /* suggestCell.xib */; };
 		B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -124,8 +128,6 @@
 		7731EA91208B12F600E9BB60 /* proprietorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = proprietorViewController.xib; sourceTree = "<group>"; };
 		7731EA96208B15C100E9BB60 /* suggestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestViewController.swift; sourceTree = "<group>"; };
 		7731EA97208B15C100E9BB60 /* suggestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = suggestViewController.xib; sourceTree = "<group>"; };
-		7731EA9A208B15EA00E9BB60 /* complaint ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "complaint ViewController.swift"; sourceTree = "<group>"; };
-		7731EA9B208B15EA00E9BB60 /* complaint ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = "complaint ViewController.xib"; sourceTree = "<group>"; };
 		7731EAA0208B570800E9BB60 /* filesCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = filesCellTableViewCell.swift; sourceTree = "<group>"; };
 		7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = filesCellTableViewCell.xib; sourceTree = "<group>"; };
 		7731EAA4208B5AE900E9BB60 /* propertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyCell.swift; sourceTree = "<group>"; };
@@ -134,6 +136,12 @@
 		7731EAAE208C287A00E9BB60 /* customerServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customerServiceViewController.xib; sourceTree = "<group>"; };
 		7731EAB1208C2C1E00E9BB60 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
 		7731EAB2208C2C1E00E9BB60 /* CustomerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerCell.xib; sourceTree = "<group>"; };
+		7731EAB5208C36A400E9BB60 /* userFeeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userFeeViewController.swift; sourceTree = "<group>"; };
+		7731EAB6208C36A400E9BB60 /* userFeeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userFeeViewController.xib; sourceTree = "<group>"; };
+		7731EAB9208C377E00E9BB60 /* userFeeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userFeeCell.swift; sourceTree = "<group>"; };
+		7731EABA208C377E00E9BB60 /* userFeeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = userFeeCell.xib; sourceTree = "<group>"; };
+		7731EABD208C3DAE00E9BB60 /* suggestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = suggestCell.swift; sourceTree = "<group>"; };
+		7731EABE208C3DAE00E9BB60 /* suggestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = suggestCell.xib; sourceTree = "<group>"; };
 		9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.release.xcconfig"; sourceTree = "<group>"; };
 		A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -201,6 +209,10 @@
 			children = (
 				0A2778DD200EF6D7002823A7 /* LLPayViewController.swift */,
 				0A2778DE200EF6D7002823A7 /* LLPayViewController.xib */,
+				7731EAB5208C36A400E9BB60 /* userFeeViewController.swift */,
+				7731EAB6208C36A400E9BB60 /* userFeeViewController.xib */,
+				7731EAB9208C377E00E9BB60 /* userFeeCell.swift */,
+				7731EABA208C377E00E9BB60 /* userFeeCell.xib */,
 			);
 			path = "用户缴费";
 			sourceTree = "<group>";
@@ -208,10 +220,12 @@
 		0A2778D6200EF513002823A7 /* 意见反馈 */ = {
 			isa = PBXGroup;
 			children = (
-				7731EA94208B156B00E9BB60 /* 客户留言 */,
-				7731EA95208B158800E9BB60 /* 业主投诉 */,
 				0AFB48E81FEBE60400B48012 /* LLIdeaViewController.swift */,
 				0AFB48E91FEBE60400B48012 /* LLIdeaViewController.xib */,
+				7731EA96208B15C100E9BB60 /* suggestViewController.swift */,
+				7731EA97208B15C100E9BB60 /* suggestViewController.xib */,
+				7731EABD208C3DAE00E9BB60 /* suggestCell.swift */,
+				7731EABE208C3DAE00E9BB60 /* suggestCell.xib */,
 			);
 			path = "意见反馈";
 			sourceTree = "<group>";
@@ -411,24 +425,6 @@
 			path = publicMOdel;
 			sourceTree = "<group>";
 		};
-		7731EA94208B156B00E9BB60 /* 客户留言 */ = {
-			isa = PBXGroup;
-			children = (
-				7731EA96208B15C100E9BB60 /* suggestViewController.swift */,
-				7731EA97208B15C100E9BB60 /* suggestViewController.xib */,
-			);
-			path = "客户留言";
-			sourceTree = "<group>";
-		};
-		7731EA95208B158800E9BB60 /* 业主投诉 */ = {
-			isa = PBXGroup;
-			children = (
-				7731EA9A208B15EA00E9BB60 /* complaint ViewController.swift */,
-				7731EA9B208B15EA00E9BB60 /* complaint ViewController.xib */,
-			);
-			path = "业主投诉";
-			sourceTree = "<group>";
-		};
 		CC0DB1430282CB37F9B27146 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -507,8 +503,11 @@
 				0AFB48C41FEBE3DF00B48012 /* LaunchScreen.storyboard in Resources */,
 				0AE02F4C1FF3B670002B9A1E /* LLGasViewController.xib in Resources */,
 				7731EA86208B058200E9BB60 /* publicCell.xib in Resources */,
+				7731EAB8208C36A400E9BB60 /* userFeeViewController.xib in Resources */,
 				0AFB48DF1FEBE57400B48012 /* LLEquipmentViewController.xib in Resources */,
 				0AFB48F51FECA8D600B48012 /* Assets.xcassets in Resources */,
+				7731EABC208C377E00E9BB60 /* userFeeCell.xib in Resources */,
+				7731EAC0208C3DAE00E9BB60 /* suggestCell.xib in Resources */,
 				0A2778E0200EF6D7002823A7 /* LLPayViewController.xib in Resources */,
 				0AFB48EB1FEBE60400B48012 /* LLIdeaViewController.xib in Resources */,
 				0AE02F441FF3B653002B9A1E /* LLWaterViewController.xib in Resources */,
@@ -524,7 +523,6 @@
 				0AFB48E31FEBE5AB00B48012 /* LLCustomerServiceViewController.xib in Resources */,
 				7731EA99208B15C100E9BB60 /* suggestViewController.xib in Resources */,
 				0AE02F481FF3B662002B9A1E /* LLEnergyViewController.xib in Resources */,
-				7731EA9D208B15EA00E9BB60 /* complaint ViewController.xib in Resources */,
 				0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */,
 				7731EAB0208C287A00E9BB60 /* customerServiceViewController.xib in Resources */,
 				0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */,
@@ -610,7 +608,6 @@
 				7731EA8E208B11A900E9BB60 /* propertyViewController.swift in Sources */,
 				0AFB48DA1FEBE55000B48012 /* LLFilesViewController.swift in Sources */,
 				0AFB48D61FEBE51C00B48012 /* LLMeasureViewController.swift in Sources */,
-				7731EA9C208B15EA00E9BB60 /* complaint ViewController.swift in Sources */,
 				0AFB48EE1FEC98C800B48012 /* LLRootViewController.swift in Sources */,
 				7731EAB3208C2C1E00E9BB60 /* CustomerCell.swift in Sources */,
 				0A2778DF200EF6D7002823A7 /* LLPayViewController.swift in Sources */,
@@ -618,6 +615,7 @@
 				0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */,
 				0A82730D1FECC29F00C70AE1 /* LLViewController.swift in Sources */,
 				0AFB48DE1FEBE57400B48012 /* LLEquipmentViewController.swift in Sources */,
+				7731EABB208C377E00E9BB60 /* userFeeCell.swift in Sources */,
 				0AFB48F21FECA7BC00B48012 /* LLLoginViewController.swift in Sources */,
 				7731EAA2208B570800E9BB60 /* filesCellTableViewCell.swift in Sources */,
 				0AE02F431FF3B653002B9A1E /* LLWaterViewController.swift in Sources */,
@@ -626,8 +624,10 @@
 				7731EA98208B15C100E9BB60 /* suggestViewController.swift in Sources */,
 				0AE077FE203BC62D00AC1996 /* LLTableViewController.swift in Sources */,
 				7731EA92208B12F600E9BB60 /* proprietorViewController.swift in Sources */,
+				7731EAB7208C36A400E9BB60 /* userFeeViewController.swift in Sources */,
 				0AFB48EA1FEBE60400B48012 /* LLIdeaViewController.swift in Sources */,
 				0AE02F501FF4838B002B9A1E /* LLRegisterViewController.swift in Sources */,
+				7731EABF208C3DAE00E9BB60 /* suggestCell.swift in Sources */,
 				7731EA85208B058200E9BB60 /* publicCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

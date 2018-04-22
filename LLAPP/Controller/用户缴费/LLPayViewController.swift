@@ -11,13 +11,32 @@ import UIKit
 class LLPayViewController: LLViewController {
 
     @IBAction func 物业事件(_ sender: Any) {
+        let vc = userFeeViewController()
+        vc.titleString = "物业费费缴纳"
+        vc.netString = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
-    @IBOutlet weak var 供暖事件: UIButton!
+    
+    @IBOutlet weak var 供暖: UIButton!
+    
+    @IBAction func 供暖事件(_ sender: Any) {
+        let vc = userFeeViewController()
+        vc.titleString = "供暖费缴纳"
+        vc.netString = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+
+    }
+    
     @IBAction func 水电事件(_ sender: Any) {
+        let vc = userFeeViewController()
+        vc.titleString = "水电费费缴纳"
+        vc.netString = ""
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     @IBOutlet weak var 水电: UIButton!
     
-    @IBOutlet weak var 供暖: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 

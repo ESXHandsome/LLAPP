@@ -13,8 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LLPayViewController" customModule="LLAPP" customModuleProvider="target">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
-                <outlet property="供暖" destination="HJp-gE-tYi" id="ngH-PR-Pud"/>
-                <outlet property="供暖事件" destination="HJp-gE-tYi" id="eL4-Gn-RSW"/>
+                <outlet property="供暖" destination="HJp-gE-tYi" id="qlb-UZ-8XE"/>
                 <outlet property="水电" destination="qnB-EY-01w" id="wbg-an-h4k"/>
                 <outlet property="物业" destination="fbO-A4-8h0" id="AeV-Uc-Ncw"/>
             </connections>
@@ -38,6 +37,9 @@
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                     <state key="normal" title="供暖费缴纳"/>
+                    <connections>
+                        <action selector="供暖事件:" destination="-1" eventType="touchUpInside" id="ln2-am-ySi"/>
+                    </connections>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fbO-A4-8h0">
                     <rect key="frame" x="20" y="499" width="374" height="150"/>
