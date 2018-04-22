@@ -100,7 +100,6 @@ def file_property():
     file_property = []
     message = db.file_property.find()
     for i in message:
-        print(i)
         name = i["name"]
         homeID = i["homeID"]
         homeDate = i["homeDate"]
@@ -110,55 +109,146 @@ def file_property():
 
 @app.route('/equipment/safeguard')
 def equipment_safeguard():
-    return 'equipment_safeguard'
+    equipment_safeguard = []
+    message = db.equipment_safeguard.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        equipment_safeguard.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":equipment_safeguard})
 
 @app.route('/equipment/clean')
 def equipment_clean():
-    return 'equipment_clean'
+    equipment_clean = []
+    message = db.equipment_clean.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        equipment_clean.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":equipment_clean})
 
 @app.route('/equipment/afforest')
 def equipment_afforest():
-    return 'equipment_afforest'
+    equipment_afforest = []
+    message = db.equipment_afforest.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        equipment_afforest.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":equipment_afforest})
 
 @app.route('/equipment/energy')
 def equipment_energy():
-    return 'equipment_energy'
+    equipment_energy = []
+    message = db.equipment_energy.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        equipment_energy.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":equipment_energy})
 
 @app.route('/customer_center/fix')
 def customer_center_fix():
-    return 'customer_center_fix'
+    customer_center_fix = []
+    message = db.customer_center_fix.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        customer_center_fix.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":customer_center_fix})
 
 @app.route('/customer_center/phone')
 def customer_center_phone():
-    return 'customer_center_phone'
+    customer_center_phone = []
+    message = db.customer_center_phone.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        customer_center_phone.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":customer_center_phone})
 
 @app.route('/customer_center/public_fix')
 def customer_center_public_fix():
-    return 'customer_center_public_fix'
+    customer_center_public_fix = []
+    message = db.customer_center_public_fix.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        customer_center_public_fix.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":customer_center_public_fix})
 
 @app.route('/customer_center/renovate')
 def customer_center_renovate():
-    return 'customer_center_renovate'
+    customer_center_renovate = []
+    message = db.customer_center_renovate.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        customer_center_renovate.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":customer_center_renovate})
 
 @app.route('/pay/energy')
 def pay_energy():
-    return 'pay_energy'
+    pay_energy = []
+    message = db.pay_energy.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        pay_energy.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":pay_energy})
 
 @app.route('/pay/gas')
 def pay_gas():
-    return 'pay_gas'
+    pay_gas = []
+    message = db.pay_gas.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        pay_gas.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":pay_gas})
 
 @app.route('/pay/manage')
 def pay_manage():
-    return 'pay_manage'
+    pay_manage = []
+    message = db.pay_manage.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        pay_manage.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":pay_manage})
 
 @app.route('/suggest/custom')
 def suggest_custom():
-    return 'suggest_custom'
+    suggest_custom = []
+    message = db.suggest_custom.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        suggest_custom.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":suggest_custom})
 
 @app.route('/suggest/user')
 def suggest_user():
-    return 'suggest_user'
+    suggest_user = []
+    message = db.suggest_user.find()
+    for i in message:
+        name = i["name"]
+        workID = i["workID"]
+        news = i["news"]
+        suggest_user.append({"name":name,"workID":workID,"news":news})
+    return json.dumps({"data":suggest_user})
 
 @app.route('/')
 def name():

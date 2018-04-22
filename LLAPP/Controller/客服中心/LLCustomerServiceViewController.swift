@@ -13,7 +13,7 @@ class LLCustomerServiceViewController: LLViewController {
         
         let vc = customerServiceViewController()
         vc.titleString = "客服保修"
-        vc.netString = ""
+        vc.netString = "http://127.0.0.1:8888/customer_center/fix"
         vc.pubLbl = "报修"
         self.navigationController?.pushViewController(vc, animated: true)
         
@@ -21,7 +21,7 @@ class LLCustomerServiceViewController: LLViewController {
     @IBAction func 电话安装事件(_ sender: Any) {
         let vc = customerServiceViewController()
         vc.titleString = "电话网络安装"
-        vc.netString = ""
+        vc.netString = "http://127.0.0.1:8888/customer_center/phone"
         vc.pubLbl = "网络安装"
         self.navigationController?.pushViewController(vc, animated: true)
 
@@ -29,7 +29,7 @@ class LLCustomerServiceViewController: LLViewController {
     @IBAction func 公共事件(_ sender: Any) {
         let vc = customerServiceViewController()
         vc.titleString = "公共维修"
-        vc.netString = ""
+        vc.netString = "http://127.0.0.1:8888/customer_center/public_fix"
         vc.pubLbl = "公共维修"
         self.navigationController?.pushViewController(vc, animated: true)
 
@@ -37,7 +37,7 @@ class LLCustomerServiceViewController: LLViewController {
     @IBAction func 装修事件(_ sender: Any) {
         let vc = customerServiceViewController()
         vc.titleString = "装修管理"
-        vc.netString = ""
+        vc.netString = "http://127.0.0.1:8888/customer_center/renovate"
         vc.pubLbl = "装修内容"
         self.navigationController?.pushViewController(vc, animated: true)
 
