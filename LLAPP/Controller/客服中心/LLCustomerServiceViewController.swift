@@ -10,12 +10,37 @@ import UIKit
 
 class LLCustomerServiceViewController: LLViewController {
     @IBAction func 报修事件(_ sender: Any) {
+        
+        let vc = customerServiceViewController()
+        vc.titleString = "客服保修"
+        vc.netString = ""
+        vc.pubLbl = "报修"
+        self.navigationController?.pushViewController(vc, animated: true)
+        
     }
     @IBAction func 电话安装事件(_ sender: Any) {
+        let vc = customerServiceViewController()
+        vc.titleString = "电话网络安装"
+        vc.netString = ""
+        vc.pubLbl = "网络安装"
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     @IBAction func 公共事件(_ sender: Any) {
+        let vc = customerServiceViewController()
+        vc.titleString = "公共维修"
+        vc.netString = ""
+        vc.pubLbl = "公共维修"
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     @IBAction func 装修事件(_ sender: Any) {
+        let vc = customerServiceViewController()
+        vc.titleString = "装修管理"
+        vc.netString = ""
+        vc.pubLbl = "装修内容"
+        self.navigationController?.pushViewController(vc, animated: true)
+
     }
     @IBOutlet weak var 装修管理: UIButton!
     @IBOutlet weak var 公共维修: UIButton!

@@ -63,6 +63,10 @@
 		7731EAA3208B570800E9BB60 /* filesCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */; };
 		7731EAA6208B5AE900E9BB60 /* propertyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAA4208B5AE900E9BB60 /* propertyCell.swift */; };
 		7731EAA7208B5AE900E9BB60 /* propertyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAA5208B5AE900E9BB60 /* propertyCell.xib */; };
+		7731EAAF208C287A00E9BB60 /* customerServiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAAD208C287A00E9BB60 /* customerServiceViewController.swift */; };
+		7731EAB0208C287A00E9BB60 /* customerServiceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAAE208C287A00E9BB60 /* customerServiceViewController.xib */; };
+		7731EAB3208C2C1E00E9BB60 /* CustomerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7731EAB1208C2C1E00E9BB60 /* CustomerCell.swift */; };
+		7731EAB4208C2C1E00E9BB60 /* CustomerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7731EAB2208C2C1E00E9BB60 /* CustomerCell.xib */; };
 		B97A1DE2D7A678E35FB7DD92 /* Pods_LLAPP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50AC26764A74E9CAD61E030D /* Pods_LLAPP.framework */; };
 /* End PBXBuildFile section */
 
@@ -126,6 +130,10 @@
 		7731EAA1208B570800E9BB60 /* filesCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = filesCellTableViewCell.xib; sourceTree = "<group>"; };
 		7731EAA4208B5AE900E9BB60 /* propertyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = propertyCell.swift; sourceTree = "<group>"; };
 		7731EAA5208B5AE900E9BB60 /* propertyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = propertyCell.xib; sourceTree = "<group>"; };
+		7731EAAD208C287A00E9BB60 /* customerServiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customerServiceViewController.swift; sourceTree = "<group>"; };
+		7731EAAE208C287A00E9BB60 /* customerServiceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = customerServiceViewController.xib; sourceTree = "<group>"; };
+		7731EAB1208C2C1E00E9BB60 /* CustomerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerCell.swift; sourceTree = "<group>"; };
+		7731EAB2208C2C1E00E9BB60 /* CustomerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomerCell.xib; sourceTree = "<group>"; };
 		9EE3386BF31C7888A26CF342 /* Pods-LLAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.release.xcconfig"; sourceTree = "<group>"; };
 		A7E460BEBA23416222729BDB /* Pods-LLAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LLAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LLAPP/Pods-LLAPP.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,6 +188,10 @@
 			children = (
 				0AFB48E01FEBE5AB00B48012 /* LLCustomerServiceViewController.swift */,
 				0AFB48E11FEBE5AB00B48012 /* LLCustomerServiceViewController.xib */,
+				7731EAAD208C287A00E9BB60 /* customerServiceViewController.swift */,
+				7731EAAE208C287A00E9BB60 /* customerServiceViewController.xib */,
+				7731EAB1208C2C1E00E9BB60 /* CustomerCell.swift */,
+				7731EAB2208C2C1E00E9BB60 /* CustomerCell.xib */,
 			);
 			path = "客服中心";
 			sourceTree = "<group>";
@@ -506,6 +518,7 @@
 				0AE077FF203BC62D00AC1996 /* LLTableViewController.xib in Resources */,
 				0AFB48BF1FEBE3DF00B48012 /* Main.storyboard in Resources */,
 				0AFB48DB1FEBE55000B48012 /* LLFilesViewController.xib in Resources */,
+				7731EAB4208C2C1E00E9BB60 /* CustomerCell.xib in Resources */,
 				7731EA8F208B11A900E9BB60 /* propertyViewController.xib in Resources */,
 				0AE02F571FF49AD8002B9A1E /* LLResetViewController.xib in Resources */,
 				0AFB48E31FEBE5AB00B48012 /* LLCustomerServiceViewController.xib in Resources */,
@@ -513,6 +526,7 @@
 				0AE02F481FF3B662002B9A1E /* LLEnergyViewController.xib in Resources */,
 				7731EA9D208B15EA00E9BB60 /* complaint ViewController.xib in Resources */,
 				0AFB48F31FECA7BC00B48012 /* LLLoginViewController.xib in Resources */,
+				7731EAB0208C287A00E9BB60 /* customerServiceViewController.xib in Resources */,
 				0AE02F511FF4838B002B9A1E /* LLRegisterViewController.xib in Resources */,
 				0AFB48EF1FEC98C800B48012 /* LLRootViewController.xib in Resources */,
 				7731EAA7208B5AE900E9BB60 /* propertyCell.xib in Resources */,
@@ -589,6 +603,7 @@
 			files = (
 				7731EAA6208B5AE900E9BB60 /* propertyCell.swift in Sources */,
 				0AE02F561FF49AD8002B9A1E /* LLResetViewController.swift in Sources */,
+				7731EAAF208C287A00E9BB60 /* customerServiceViewController.swift in Sources */,
 				0AFB48E21FEBE5AB00B48012 /* LLCustomerServiceViewController.swift in Sources */,
 				0AE02F471FF3B662002B9A1E /* LLEnergyViewController.swift in Sources */,
 				0AE02F4B1FF3B670002B9A1E /* LLGasViewController.swift in Sources */,
@@ -597,6 +612,7 @@
 				0AFB48D61FEBE51C00B48012 /* LLMeasureViewController.swift in Sources */,
 				7731EA9C208B15EA00E9BB60 /* complaint ViewController.swift in Sources */,
 				0AFB48EE1FEC98C800B48012 /* LLRootViewController.swift in Sources */,
+				7731EAB3208C2C1E00E9BB60 /* CustomerCell.swift in Sources */,
 				0A2778DF200EF6D7002823A7 /* LLPayViewController.swift in Sources */,
 				7731EA8B208B0ED800E9BB60 /* publicModel.swift in Sources */,
 				0AFB48BC1FEBE3DF00B48012 /* ViewController.swift in Sources */,
