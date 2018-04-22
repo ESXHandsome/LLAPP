@@ -14,18 +14,18 @@ collection = db.login
 @app.route('/login',methods=['POST'])
 def login():
     return json.dumps({'status':'login'})
-    # user = request.form.get('name')
-    # pwd = request.form.get('pwd')
-    # dic = collection.find_one({"user":user})
-    # print dic
-    # if dic != None:
-    #     print  dic[u'password']
-    #     if dic[u'password'] == pwd:
-    #         return json.dumps({'status':'login'})
-    # if user == 'admin' and pwd == "admin":
-    #     return json.dumps({'status':'login'})
-    # else:
-    #     return json.dumps({'status':'unlogin'})
+    user = request.form.get('name')
+    pwd = request.form.get('pwd')
+    dic = collection.find_one({"user":user})
+    print dic
+    if dic != None:
+        print  dic[u'password']
+        if dic[u'password'] == pwd:
+            return json.dumps({'status':'login'})
+    if user == 'admin' and pwd == "admin":
+        return json.dumps({'status':'login'})
+    else:
+        return json.dumps({'status':'unlogin'})
 
 #register
 @app.route('/register',methods=['POST'])
@@ -85,11 +85,28 @@ def measure_gas():
 
 @app.route('/file/proprietor')
 def file_proprietor():
-    return 'file_proprietor'
+    file_proprietor = []
+    message = db.file_proprietor.find()
+    for i in message:
+        name = i["name"]
+        age = i["age"]
+        tel = i["tel"]
+        home = i["home"]
+        file_proprietor.append({"name":name,"age":age,"tel":tel,"home":home})
+    return json.dumps({"data":file_proprietor})
 
 @app.route('/file/property')
 def file_property():
-    return 'file_property'
+    file_property = []
+    message = db.file_property.find()
+    for i in message:
+        print(i)
+        name = i["name"]
+        homeID = i["homeID"]
+        homeDate = i["homeDate"]
+        homeArea = i["homeArea"]
+        file_property.append({"name":name,"homeID":homeID,"homeDate":homeDate,"homeArea":homeArea})
+    return json.dumps({"data":file_property})
 
 @app.route('/equipment/safeguard')
 def equipment_safeguard():

@@ -50,11 +50,11 @@ class LLRootViewController: UITabBarController {
         ideaNVC.tabBarItem.title = "意见反馈"
         
         //给标签加上图标
-        measureNVC.tabBarItem.image = UIImage.init(named: "")
-        filesNVC.tabBarItem.image = UIImage.init(named: "")
-        customerNVC.tabBarItem.image = UIImage.init(named: "")
-        userNVC.tabBarItem.image = UIImage.init(named: "")
-        ideaNVC.tabBarItem.image = UIImage.init(named: "")
+        measureNVC.tabBarItem.image = UIImage.init(named: "my")
+        filesNVC.tabBarItem.image = UIImage.init(named: "tab_find")
+        customerNVC.tabBarItem.image = UIImage.init(named: "tab_home")
+        userNVC.tabBarItem.image = UIImage.init(named: "tab_news")
+        ideaNVC.tabBarItem.image = UIImage.init(named: "feedback_spot")
         
         //选中图标
         measureNVC.tabBarItem.selectedImage = UIImage.init(named: "")
